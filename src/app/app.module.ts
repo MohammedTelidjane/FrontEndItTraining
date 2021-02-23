@@ -9,6 +9,8 @@ import { ListeFormationComponent } from './features/formation/liste-formation/li
 import { FormulaireThemeComponent } from './features/theme/formulaire-theme/formulaire-theme.component';
 import { ListeThemeComponent } from './features/theme/liste-theme/liste-theme.component';
 import { CardThemeComponent } from './features/theme/card-theme/card-theme.component';
+import { CardFormateurComponent } from './features/formateur/card-formateur/card-formateur.component';
+import { ListeFormateurComponent } from './features/formateur/liste-formateur/liste-formateur.component';
 
 
 @NgModule({
@@ -20,6 +22,8 @@ import { CardThemeComponent } from './features/theme/card-theme/card-theme.compo
     FormulaireThemeComponent,
     ListeThemeComponent,
     CardThemeComponent,
+    CardFormateurComponent,
+    ListeFormateurComponent,
     
  
   ],
