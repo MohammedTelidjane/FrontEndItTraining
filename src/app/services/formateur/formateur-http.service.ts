@@ -12,4 +12,8 @@ export class FormateurHttpService {
   findAll(){
     return this.httpFormateur.get<Formateur[]>('http://localhost:3000/formateurs')
   }
+
+  delete(id:number){
+    return this.httpFormateur.delete(`http://localhost:3000/formateurs/${id}`);
+  }
 }

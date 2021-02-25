@@ -13,6 +13,7 @@ import { CardFormateurComponent } from './features/formateur/card-formateur/card
 import { ListeFormateurComponent } from './features/formateur/liste-formateur/liste-formateur.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import {ButtonModule} from 'primeng/button';
 
 
 @NgModule({
@@ -25,8 +26,7 @@ import { HttpClientModule } from '@angular/common/http';
     ListeThemeComponent,
     CardThemeComponent,
     CardFormateurComponent,
-    ListeFormateurComponent,
-    
+    ListeFormateurComponent
  
   ],
   imports: [
@@ -34,7 +34,9 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ButtonModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

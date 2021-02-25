@@ -19,6 +19,9 @@ export class ListeFormateurComponent implements OnInit {
     })
   }
 
-
+  supprimeFormateur(formateur:Formateur){
+    // this.formateurHttpService.delete(formateur.id).subscribe;
+    this.formateurs = this.formateurs.filter(unFormateur => unFormateur.id !== formateur.id)
+  }
 
 }
