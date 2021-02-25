@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Formateur } from 'src/app/models/Formateur';
 
 @Component({
   selector: 'app-card-formateur',
