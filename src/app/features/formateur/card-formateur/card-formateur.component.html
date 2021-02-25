@@ -1,16 +1,16 @@
 <div class="cardFormateur">
     <div class="formationSelection champ">Choix 1</div>
     <div class="formateurIdentite champ">
-        <div class=formateurNom> Martin</div>
-        <div class=formateurPrenom> Jean-Heude</div>
+        <div class=> {{formateur.nom}}</div>
+        <div class=> {{formateur.prenom}} </div>
     </div>
-    <div class="formateurEntreprise champ"> Capgemini </div>
+    <div class="formateurEntreprise champ"> {{formateur.entreprise}} </div>
     <div class="formateurNote champ"> 4,5/5</div>
-    <div class="formateurDateDemande champ"> 08/02/2021 </div>
-    <div class="formateurDateReponse champ"> 20/02/2021 </div>
+    <!-- <div class="formateurDateDemande champ"> 08/02/2021 </div>
+    <div class="formateurDateReponse champ"> 20/02/2021 </div> -->
     <div class="formateurNatureReponse champ"> Refus </div>
     <div class="formateurContact champ">
-        <div class="formateurTelephone"> 06 12 47 24 XX </div>
-        <div class="formateurEmail"> JH.toto@gmail.com </div>
+        <div class="formateurTelephone"> {{formateur.telephone}} </div>
+        <div class="formateurEmail"> {{formateur.email}} </div>
     </div>
 </div>
