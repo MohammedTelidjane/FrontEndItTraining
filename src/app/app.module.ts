@@ -11,6 +11,8 @@ import { ListeThemeComponent } from './features/theme/liste-theme/liste-theme.co
 import { CardThemeComponent } from './features/theme/card-theme/card-theme.component';
 import { CardFormateurComponent } from './features/formateur/card-formateur/card-formateur.component';
 import { ListeFormateurComponent } from './features/formateur/liste-formateur/liste-formateur.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -29,7 +31,10 @@ import { ListeFormateurComponent } from './features/formateur/liste-formateur/li
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
