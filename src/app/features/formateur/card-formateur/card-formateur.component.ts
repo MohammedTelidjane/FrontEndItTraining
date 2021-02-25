@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Formateur } from 'src/app/models/Formateur';
+import { FormateurHttpService } from 'src/app/services/formateur/formateur-http.service';
 
 @Component({
   selector: 'app-card-formateur',
@@ -8,7 +9,9 @@ import { Formateur } from 'src/app/models/Formateur';
 })
 export class CardFormateurComponent implements OnInit {
 
-  constructor() { }
+  @Input() formateur:Formateur
+
+  constructor(private formateurHttpService:FormateurHttpService) { }
 
   ngOnInit(): void {
   }
