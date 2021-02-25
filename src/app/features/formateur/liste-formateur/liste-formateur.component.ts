@@ -14,9 +14,9 @@ export class ListeFormateurComponent implements OnInit {
   constructor(private formateurHttpService:FormateurHttpService) { }
 
   ngOnInit(): void {
-    // this.formateurHttpService.findAll().subscribe(res=>{
-    //   this.formateurs = res
-    // })
+    this.formateurHttpService.findAll().subscribe(res=>{
+      this.formateurs = res
+    })
   }
 
 
