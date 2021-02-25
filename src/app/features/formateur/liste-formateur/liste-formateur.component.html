@@ -1,1 +1,7 @@
-<p>liste-formateur works!</p>
+<div class="listeFormateur">
+    <app-card-formateur 
+        *ngFor="let formateur of formateurs"
+        [formateur]="formateur">
+
+    </app-card-formateur>
+</div>>
