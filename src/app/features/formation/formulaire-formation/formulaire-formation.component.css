@@ -1,0 +1,24 @@
+.formulaireformation{
+
+    /* display: flex; */
+    flex-direction: column;
+    /* justify-content: space-around; */
+    border:midnightblue;
+    border-style: solid;
+    width: 250px;
+    padding: 10px;
+    margin-left: 10px;
+}
+    
+.inputDescription{
+        width: 240px;
+        height: 100px;
+    }
+
+ .buttonAjouterFormation{
+        background-color: navy;
+        color: rgb(223, 223, 248);
+        margin-left: 50px;
+    }
+
+

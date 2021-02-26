@@ -1,1 +1,17 @@
+
 <p>liste-formation works!</p>
+<div>
+    <button  class="boutonRecupererToutesLFormations" type="submit" (click)="recupererToutesFormations()" >Récuperer Toutes les Formations</button> 
+</div>
+
+<div class="carteFormation" *ngFor="let formation of formations">
+    <p>Id : <span class="nom">{{formation.id}}</span></p>
+    <p>Nom : <span class="nom">{{formation.titre}}</span></p>
+    <p>Description : <span class="nom">{{formation.description}}</span></p>
+    <button  class="SupprimerParId" type="submit" (click)="SupprimerParId(formation.id)" >Supprimer une formation par Id</button>
+    <button  class="SupprimerParId" type="submit" > Mettre à jour une formation</button>
+    <button  class="SupprimerParId" type="submit" > Chercher une formation par Id</button>
+</div> 
+<!-- <div  *ngFor="let formation of formations"> 
+    <app-card-formation [formation]="formation"></app-card-formation>   
+ </div>  -->
