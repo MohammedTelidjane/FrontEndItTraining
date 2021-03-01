@@ -10,10 +10,10 @@ export class FormateurHttpService {
   constructor(private httpFormateur:HttpClient) { }
 
   findAll(){
-    return this.httpFormateur.get<Formateur[]>('http://localhost:3000/formateurs')
+    return this.httpFormateur.get<Formateur[]>('http://localhost:8001/formateurs')
   }
 
   delete(id:number){
-    return this.httpFormateur.delete(`http://localhost:3000/formateurs/${id}`);
+    return this.httpFormateur.delete(`http://localhost:8001/formateurs/${id}`);
   }
 }
