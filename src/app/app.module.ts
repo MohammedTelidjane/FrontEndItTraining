@@ -14,6 +14,8 @@ import { ListeFormateurComponent } from './features/formateur/liste-formateur/li
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import {ButtonModule} from 'primeng/button';
+import { FormFormateurComponent } from './features/formateur/form-formateur/form-formateur.component';
+import { AssocierFormateurAFormationComponent } from './pages/associer-formateur-aformation/associer-formateur-aformation.component';
 
 
 @NgModule({
@@ -26,7 +28,9 @@ import {ButtonModule} from 'primeng/button';
     ListeThemeComponent,
     CardThemeComponent,
     CardFormateurComponent,
-    ListeFormateurComponent
+    ListeFormateurComponent,
+    FormFormateurComponent,
+    AssocierFormateurAFormationComponent
  
   ],
   imports: [
