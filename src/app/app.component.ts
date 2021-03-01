@@ -20,6 +20,7 @@ export class AppComponent {
   '<span style="text-decoration: underline">underline text</span>';
 
 
+
   constructor(){}
   ajouterFormation(nouvelleFormation:Formation){
 

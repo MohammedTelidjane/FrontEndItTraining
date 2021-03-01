@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Formation } from 'src/app/models/Formation';
+import { FormationService } from 'src/app/services/formation.service';
 
 @Component({
   selector: 'app-page-formation-utilisateur',
@@ -6,10 +8,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./page-formation-utilisateur.component.css']
 })
 export class PageFormationUtilisateurComponent implements OnInit {
+  formations: Formation[]=[];
 
-  constructor() { }
+  constructor(private formationService: FormationService) { }
 
   ngOnInit(): void {
+    this.formationService.findAll().subscribe(res=>this.formations=res);
   }
 
 }

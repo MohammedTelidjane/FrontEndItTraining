@@ -1,3 +1,28 @@
+.p-editor.p-editor-container .p-editor-toolbar{
+
+    background-color: blueviolet;
+    color: brown;
+    width:400px;
+    
+}
+
+.editeurText{
+
+    margin-left: 400px;
+    width: 600px;
+    margin-bottom: 80px;
+    position: relative;
+
+}
+
+
+
+.p-editor.p-editor-container{
+    width: 700px;
+    height: 300px; 
+}
+
+
 
 .conteneur{
     border-width: 4px;
@@ -30,3 +55,4 @@
     
    
 }
+

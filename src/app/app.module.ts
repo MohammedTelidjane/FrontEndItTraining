@@ -19,6 +19,10 @@ import {InputSwitchModule} from 'primeng/inputswitch';
 import { PageFormationUtilisateurComponent } from './pages/page-formation-utilisateur/page-formation-utilisateur.component';
 import { PageFormationAdministrateurComponent } from './pages/page-formation-administrateur/page-formation-administrateur.component';
 //import {EditorModule} from 'primeng/editor';
+import {SplitButtonModule} from 'primeng/splitbutton';
+import { DetailFormationComponent } from './features/detail-formation/detail-formation.component';
+
+
 
 
 
@@ -37,6 +41,7 @@ import { PageFormationAdministrateurComponent } from './pages/page-formation-adm
     NavbarComponent,
     PageFormationUtilisateurComponent,
     PageFormationAdministrateurComponent,
+    DetailFormationComponent,
    
     
 
@@ -50,7 +55,9 @@ import { PageFormationAdministrateurComponent } from './pages/page-formation-adm
     HttpClientModule,
     ChipsModule,
     EditorModule,
-    InputSwitchModule
+    InputSwitchModule,
+    SplitButtonModule,
+    ButtonModule
     
    
 

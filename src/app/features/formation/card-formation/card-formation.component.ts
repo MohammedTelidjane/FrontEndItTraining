@@ -18,6 +18,11 @@ export class CardFormationComponent implements OnInit, OnChanges {
     // console.log(this.formation);
     // this.router.navigate(['/cardFormations']);
   }
+
+  detailFormation():void{
+    this.router.navigate(['/detailFormation']);
+
+  }
   
   ngOnChanges(ttt:any){
     console.log("verifier donneé coté card")

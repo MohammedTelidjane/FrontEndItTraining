@@ -23,7 +23,7 @@ export class FormationService {
  }
 
  update(formation:Formation) {
-
+ console.log("verifier update front");
    return this.httpClient.put<Formation>("http://localhost:8001/formations", formation)
 
 }
