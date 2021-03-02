@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup } from '@angular/forms';
+import { Router } from '@angular/router';
+import { FormateurHttpService } from 'src/app/services/formateur/formateur-http.service';
 
 @Component({
   selector: 'app-form-formateur',
@@ -7,9 +10,32 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FormFormateurComponent implements OnInit {
 
-  constructor() { }
+  formateurFormulaire: FormGroup;
+
+  constructor(
+
+    private formaBuilder: FormBuilder,
+    private formateurHttpService: FormateurHttpService,
+    //private router: Router
+
+  ) {
+      this.formateurFormulaire = this.formaBuilder.group({
+        nom: [''],
+        prenom: [''],
+        dateNaissance: [''],
+        entreprise: [''],
+        telephone: [''],
+        email: ['']
+      })
+  }
 
   ngOnInit(): void {
   }
 
+  Ajouter(){
+    this.formateurHttpService
+        .save(this.formateurFormulaire.value)
+        .subscribe(console.log)
+    //this.router.navigate(['/chats'])
+}
 }

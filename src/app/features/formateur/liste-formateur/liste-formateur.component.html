@@ -1,7 +1,8 @@
 <div class="listeFormateur">
     <app-card-formateur 
         *ngFor="let formateur of formateurs"
-        [formateur]="formateur"
-        (delete)="deleteFormateur(formateur)">
+        [formateur]="formateur">
+        <!-- (delete)="deleteFormateur(formateur)">
+        <button pButton (click)="deleteFormateur()" type="button" label=" Supprimer" icon="pi pi-trash"></button> -->
     </app-card-formateur>
 </div>
