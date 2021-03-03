@@ -1,9 +1,9 @@
-<button onclick=""> Afficher la liste des formateurs </button>
-<form [formGroup]="formateurFormulaire" (ngSubmit)="Ajouter()">    
+<button routerLink="/ListeFormateur"> Afficher la liste des formateurs </button>
+<form [formGroup]="formateurFormulaire" (ngSubmit)="ajouter()">    
     <p>Nom: <input formControlName="nom"></p>
     <p>Prenom: <input formControlName="prenom"></p>
     <p>Date de naissance: <input formControlName="dateNaissance"></p>
-    <p>Entreprise: <input formControlName="entreprise"></p>
+    <!-- <p>Entreprise: <input formControlName="entreprise"></p> -->
     <p>Telephone: <input formControlName="telephone"></p>
     <p>Email: <input formControlName="email"></p>
     <button type="submit"> Ajouter </button>

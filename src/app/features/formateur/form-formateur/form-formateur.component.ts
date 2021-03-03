@@ -32,10 +32,10 @@ export class FormFormateurComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  Ajouter(){
+  ajouter(){
     this.formateurHttpService
         .save(this.formateurFormulaire.value)
         .subscribe(console.log)
-    //this.router.navigate(['/chats'])
+    // this.router.navigate(['/chats'])
 }
 }
