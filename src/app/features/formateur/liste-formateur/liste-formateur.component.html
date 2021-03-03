@@ -1,8 +1,8 @@
 <div class="listeFormateur">
+    <button onclick="" > Ajouter un formateur</button>
     <app-card-formateur 
         *ngFor="let formateur of formateurs"
         [formateur]="formateur"
         (delete)="deleteFormateur(formateur)">
-        <button pButton (click)="deleteFormateur()" type="button" label=" Supprimer" icon="pi pi-trash"></button>
     </app-card-formateur>
 </div>

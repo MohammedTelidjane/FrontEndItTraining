@@ -1,5 +1,4 @@
-import { Component, Input, OnInit, Output } from '@angular/core';
-import * as EventEmitter from 'events';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Formateur } from 'src/app/models/Formateur';
 import { FormateurHttpService } from 'src/app/services/formateur/formateur-http.service';
 
@@ -11,10 +10,14 @@ import { FormateurHttpService } from 'src/app/services/formateur/formateur-http.
 export class CardFormateurComponent implements OnInit {
 
   @Input() formateur:Formateur
-  //@Output() delete = new EventEmitter()
+  @Output() delete = new EventEmitter()
 
   constructor(private formateurHttpService:FormateurHttpService) { }
 
   ngOnInit(): void {
+  }
+
+  supprimerFormateur(){
+    this.delete.emit("")
   }
 }

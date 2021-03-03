@@ -14,7 +14,7 @@ export class FormateurHttpService {
   }
 
   delete(id:number){
-    return this.httpFormateur.delete(`http://localhost:8001/formateurs/${id}`);
+    return this.httpFormateur.delete(`http://localhost:8001/formateurs/id/${id}`);
   }
 
   save(formateur: Formateur){
