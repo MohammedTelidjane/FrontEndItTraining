@@ -24,9 +24,9 @@ export class ListeFormateurComponent implements OnInit {
   //   this.formateurs = this.formateurs.filter(unFormateur => unFormateur.id !== formateur.id)
   // }
 
-  // deleteFormateur():void {
-  //   //this.delete.emit()
-  //   console.log("Bravo")
-  // }
+  deleteFormateur():void {
+    //this.delete.emit()
+    console.log("Bravo")
+  }
 
 }
