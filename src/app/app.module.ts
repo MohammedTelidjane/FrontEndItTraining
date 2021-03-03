@@ -16,6 +16,8 @@ import { HttpClientModule } from '@angular/common/http';
 import {ButtonModule} from 'primeng/button';
 import { FormFormateurComponent } from './features/formateur/form-formateur/form-formateur.component';
 import { AssocierFormateurAFormationComponent } from './pages/associer-formateur-aformation/associer-formateur-aformation.component';
+import { PageListeFormateurComponent } from './pages/page-liste-formateur/page-liste-formateur.component';
+import { PageFormulaireFormateurComponent } from './pages/page-formulaire-formateur/page-formulaire-formateur.component';
 
 
 @NgModule({
@@ -30,7 +32,9 @@ import { AssocierFormateurAFormationComponent } from './pages/associer-formateur
     CardFormateurComponent,
     ListeFormateurComponent,
     FormFormateurComponent,
-    AssocierFormateurAFormationComponent
+    AssocierFormateurAFormationComponent,
+    PageListeFormateurComponent,
+    PageFormulaireFormateurComponent
  
   ],
   imports: [
