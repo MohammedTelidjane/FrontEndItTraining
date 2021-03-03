@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
 import { FormateurHttpService } from 'src/app/services/formateur/formateur-http.service';
@@ -10,6 +10,7 @@ import { FormateurHttpService } from 'src/app/services/formateur/formateur-http.
 })
 export class FormFormateurComponent implements OnInit {
 
+  @Input() messageButton:string
   formateurFormulaire: FormGroup;
 
   constructor(

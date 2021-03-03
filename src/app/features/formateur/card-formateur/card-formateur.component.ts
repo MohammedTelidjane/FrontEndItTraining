@@ -20,4 +20,8 @@ export class CardFormateurComponent implements OnInit {
   supprimerFormateur(){
     this.delete.emit("")
   }
+
+  MettreAJourFormateur(){
+    
+  }
 }
