@@ -24,4 +24,7 @@ export class ListeFormateurComponent implements OnInit {
     this.formateurs = this.formateurs.filter(unFormateur => unFormateur.id !== formateur.id);
   }
 
+  updateFormateur(formateur:Formateur){
+    
+  }
 }

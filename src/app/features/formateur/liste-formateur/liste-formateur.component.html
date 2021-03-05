@@ -3,6 +3,7 @@
     <app-card-formateur 
         *ngFor="let formateur of formateurs"
         [formateur]="formateur"
+        (update)="updateFormateur(formateur)"
         (delete)="deleteFormateur(formateur)">
     </app-card-formateur>
 </div>

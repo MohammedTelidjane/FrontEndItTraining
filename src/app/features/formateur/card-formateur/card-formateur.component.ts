@@ -12,6 +12,7 @@ export class CardFormateurComponent implements OnInit {
 
   @Input() formateur:Formateur
   @Output() delete = new EventEmitter()
+  @Output() update = new EventEmitter()
   
 
   constructor(private formateurHttpService:FormateurHttpService,
@@ -26,6 +27,7 @@ export class CardFormateurComponent implements OnInit {
   }
 
   MettreAJourFormateur(){
+    this.update.emit("")
     this.router.navigate(['/FormulaireModificationFormateur'])
 
   }
