@@ -9,11 +9,11 @@ import { FormationService } from 'src/app/services/formation.service';
   styleUrls: ['./card-formation.component.css']
 })
 export class CardFormationComponent implements OnInit, OnChanges {
-  // @Input() formation: Formation;
-   formations: Formation[]=[];
+ @Input() formation: Formation;
+   //formations: Formation[]=[];
 
   constructor(private router:Router, private formationService:FormationService ) { 
-    this.formationService.findAll().subscribe(res=>this.formations=res);
+   // this.formationService.findAll().subscribe(res=>this.formations=res);
 
     // console.log(this.formation);
     // this.router.navigate(['/cardFormations']);
@@ -21,16 +21,15 @@ export class CardFormationComponent implements OnInit, OnChanges {
 
   detailFormation():void{
     this.router.navigate(['/detailFormation']);
-
   }
   
   ngOnChanges(ttt:any){
     console.log("verifier donneé coté card")
-    console.log(this.formations)
+    //console.log(this.formations)
   }
 
   ngOnInit(): void {
-    console.log(this.formations);
+    //console.log(this.formations);
   }
   
   

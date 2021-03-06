@@ -13,7 +13,8 @@ import { FormationService } from 'src/app/services/formation.service';
  
 })
 export class ListeFormationComponent implements OnInit {
-  @Input() formations: Formation[]=[];
+  // @Input() formations: Formation[]=[];
+  formations: Formation[]=[];
   text1: string = 
   '<span style="color: red">red text</span>' + '<br>' +
   '<span style="text-decoration: line-through">crossed out text</span>' + '<br>' +

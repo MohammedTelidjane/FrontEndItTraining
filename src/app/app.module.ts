@@ -57,9 +57,7 @@ import { DetailFormationComponent } from './features/detail-formation/detail-for
     EditorModule,
     InputSwitchModule,
     SplitButtonModule,
-    ButtonModule
-    
-   
+    ButtonModule,
 
   ],
   providers: [],

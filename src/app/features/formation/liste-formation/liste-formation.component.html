@@ -2,7 +2,7 @@
 <p>liste-formation works!</p>
 
 
-<form class="formulaireformation" [formGroup]="formationForm" (ngSubmit)="onSubmit()">
+<!-- <form class="formulaireformation" [formGroup]="formationForm" (ngSubmit)="onSubmit()">
 
     <label>
             Titre:<input type="text" formControlName="titre">
@@ -12,9 +12,9 @@
         </label><br/><br/>
         <button class="buttonAjouterFormation" type="submit">Ajouter Formation</button>
     
-    </form>
+    </form> -->
     
-
+<app-formulaire-formation></app-formulaire-formation>
 
 <div>
     <button  class="boutonRecupererToutesLFormations" type="submit" (click)="recupererToutesFormations()" >Récuperer Toutes les Formations</button> 
@@ -38,11 +38,11 @@
 
 
 <div  *ngFor="let formation of formations">
+    <app-card-formation [formation]="formation"></app-card-formation>
     <p>Id : <span class="nom">{{formation.id}}</span></p>
-    <p>Nom : <span class="nom">{{formation.titre}}</span></p>
-    <p>Description : <span class="nom">{{formation.description}}</span></p>
-    
-  
+    <!-- <p>Nom : <span class="nom">{{formation.titre}}</span></p> -->
+    <!-- <p>Description : <span class="nom">{{formation.description}}</span></p> -->
+
     <div>
         <label>
             Nom:<input id ="myInputChampText"type="text" >
