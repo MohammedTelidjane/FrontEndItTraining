@@ -13,3 +13,10 @@
 .nom{
     color: black;
 }
+
+#bb{
+    color:white;
+    margin-bottom: 0;
+    margin-left: 40px;
+    margin-top: 5px;
+}

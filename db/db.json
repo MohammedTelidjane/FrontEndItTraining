@@ -1,0 +1,24 @@
+{
+    "formations": [
+      {
+        "nom": "c",
+        "description": "formation c",
+        "id": 1
+      },
+      {
+        "nom": "c++",
+        "description": "formation c++",
+        "id": 2
+      },
+      {
+        "nom": "java",
+        "description": "formation de java",
+        "id": 3
+      },
+      {
+        "nom": "delphi",
+        "description": "formation de delphi",
+        "id": 4
+      }
+    ]
+  }

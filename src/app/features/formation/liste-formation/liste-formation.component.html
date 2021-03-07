@@ -1,1 +1,59 @@
+
 <p>liste-formation works!</p>
+
+
+<!-- <form class="formulaireformation" [formGroup]="formationForm" (ngSubmit)="onSubmit()">
+
+    <label>
+            Titre:<input type="text" formControlName="titre">
+        </label>
+        <label><br/><br/>
+            Description:<input type="text" formControlName="description" class="inputDescription">
+        </label><br/><br/>
+        <button class="buttonAjouterFormation" type="submit">Ajouter Formation</button>
+    
+    </form> -->
+    
+<app-formulaire-formation></app-formulaire-formation>
+
+<div>
+    <button  class="boutonRecupererToutesLFormations" type="submit" (click)="recupererToutesFormations()" >Récuperer Toutes les Formations</button> 
+</div>
+
+<!--  avec classe
+<div class="carteFormation" *ngFor="let formation of formations">
+<div class="carteFormation" *ngFor="let formation of formations">
+    <p>Id : <span class="nom">{{formation.id}}</span></p>
+    <p>Nom : <span class="nom">{{formation.titre}}</span></p>
+    <p>Description : <span class="nom">{{formation.description}}</span></p>
+    <div>
+        <textarea class="editeurText" cols="30" rows="4">Exemple</textarea> 
+    </div>
+    
+    <button  class="SupprimerParId" type="submit" (click)="SupprimerParId(formation.id)" >Supprimer une formation par Id</button>
+    <button  class="SupprimerParId" type="submit" > Mettre à jour une formation</button>
+    <button  class="SupprimerParId" type="submit" > Chercher une formation par Id</button>
+
+</div>  -->
+
+
+<div  *ngFor="let formation of formations">
+    <app-card-formation [formation]="formation"></app-card-formation>
+    <p>Id : <span class="nom">{{formation.id}}</span></p>
+    <!-- <p>Nom : <span class="nom">{{formation.titre}}</span></p> -->
+    <!-- <p>Description : <span class="nom">{{formation.description}}</span></p> -->
+
+    <div>
+        <label>
+            Nom:<input id ="myInputChampText"type="text" >
+        </label>
+        <br/><br/>
+         <label>Description:</label> <textarea id="myInputEditor" cols="30" rows="4"></textarea> 
+    </div>
+    <br/><br/>
+    <button  class="SupprimerParId" type="submit" (click)="SupprimerParId(formation.id)" >Supprimer une formation</button>
+    <button  class="SupprimerParId" type="submit" (click)="MettreAJourUneFormation(formation)" > Mettre à jour une formation</button>
+    <!-- <button  class="SupprimerParId" type="submit" > Chercher une formation par Id</button> -->
+
+</div>  
+
