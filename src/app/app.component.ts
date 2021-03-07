@@ -9,11 +9,5 @@ import { Session } from './models/session';
 })
 export class AppComponent {
   title = 'FrontEndItTraining';
-  listSession: Session[] = [];
-  listPart: Participant[] = [];
-
-  // searchSession = (session: any) => {
-  //   this.listSession.push(session);
-  // }
 
 }
