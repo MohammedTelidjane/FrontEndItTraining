@@ -1,0 +1,9 @@
+<h1>Liste des sessions :</h1>
+<div class="list-session">
+    <app-card-session *ngFor="let session of listSession" 
+    [sess]="session"
+    (delete)="onDelete(session)">
+
+    </app-card-session>
+
+</div>
