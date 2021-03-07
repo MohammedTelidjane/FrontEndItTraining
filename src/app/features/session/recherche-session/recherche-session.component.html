@@ -1,0 +1,21 @@
+<form [formGroup]="rechercheSessionForm" (ngSubmit)="onSearch()">
+    <h1>Trouver une session</h1> 
+    <label>
+        Rechercher par Id :
+        <input type="number" formControlName="id" />
+    </label>
+    <!-- <label>
+        Prix hors taxe :
+        <input type="number" formControlName="prixHt" />
+    </label>
+    <label>
+        Date de début : 
+        <input type="text" formControlName="dateDebut" />
+    </label>
+    <label>
+        Date de fin :
+        <input type="text" formControlName="dateFin" />
+    </label> -->
+    <button type="submit">Trouver la session</button>
+</form>
+
