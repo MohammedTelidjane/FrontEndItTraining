@@ -50,10 +50,10 @@ export class ListeFormationComponent implements OnInit {
   } 
 
   MettreAJourUneFormation(formation:Formation,valTitre:string,valDescription:string):void{
-    console.log("avant les inputs");
-    console.log(formation.id);
-    console.log(formation.titre);
-    console.log(formation.description);
+   // console.log("avant les inputs");
+   // console.log(formation.id);
+   // console.log(formation.titre);
+   // console.log(formation.description);
   // let inputValDescription = (<HTMLInputElement>document.getElementById("myInputEditor")).value;
   // let inputValTitre = (<HTMLInputElement>document.getElementById("myInputChampText")).value;
   console.log(formation);
@@ -61,15 +61,15 @@ export class ListeFormationComponent implements OnInit {
   //  formation.titre=inputValTitre;
   formation.titre=valTitre;
   formation.description=valDescription;
-   console.log("avant dappler save");
-   console.log(formation.description);
-   console.log(formation.titre);
+   //console.log("avant dappler save");
+  // console.log(formation.description);
+  // console.log(formation.titre);
    this.formationService.save(formation).subscribe(console.log);
-   console.log("apresdappler save");
+   //console.log("apresdappler save");
 
   }
   ngOnInit(): void {
-    // this.formationService.findAll().subscribe(res=>this.formations=res);
+    this.formationService.findAll().subscribe(res=>this.formations=res);
 
   }
 

@@ -25,11 +25,13 @@ export class CardFormationComponent implements OnInit, OnChanges {
   
   ngOnChanges(ttt:any){
     console.log("verifier donneé coté card")
-    //console.log(this.formations)
+    console.log(this.formation)
   }
 
   ngOnInit(): void {
-    //console.log(this.formations);
+    console.log("d");
+    console.log(this.formation);
+    console.log("e");
   }
   
   
