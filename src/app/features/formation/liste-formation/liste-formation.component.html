@@ -18,8 +18,8 @@
 
 <div>
     <button  class="boutonRecupererToutesLFormations" type="submit" (click)="recupererToutesFormations()" >Récuperer Toutes les Formations</button> 
-</div>
 
+</div>
 <!--  avec classe
 <div class="carteFormation" *ngFor="let formation of formations">
 <div class="carteFormation" *ngFor="let formation of formations">
@@ -45,14 +45,16 @@
 
     <div>
         <label>
-            Nom:<input id ="myInputChampText"type="text" >
+            <!-- Nom:<input id ="myInputChampText" type="text" > <br> -->
+            Nom:<input type="text" #boxTitre> <br>
         </label>
         <br/><br/>
-         <label>Description:</label> <textarea id="myInputEditor" cols="30" rows="4"></textarea> 
+         <!-- <label>Description:</label> <textarea id="myInputEditor" cols="30" rows="4"></textarea>  -->
+          <label>Description:</label> <textarea cols="30" rows="4" #boxDescription></textarea> 
     </div>
     <br/><br/>
     <button  class="SupprimerParId" type="submit" (click)="SupprimerParId(formation.id)" >Supprimer une formation</button>
-    <button  class="SupprimerParId" type="submit" (click)="MettreAJourUneFormation(formation)" > Mettre à jour une formation</button>
+    <button  class="SupprimerParId" type="submit" (click)="MettreAJourUneFormation(formation,boxTitre.value,boxDescription.value)" > Mettre à jour une formation</button>
     <!-- <button  class="SupprimerParId" type="submit" > Chercher une formation par Id</button> -->
 
 </div>  
