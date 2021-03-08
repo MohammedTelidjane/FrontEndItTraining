@@ -32,4 +32,12 @@ Deuxième façon de faire
         lienImageReseauSocial="https://th.bing.com/th/id/OIP.1nFvGnrJ53FAqIefnNCAWwHaHa?w=221&h=220&c=7&o=5&pid=1.7"
         nomReseauSocial="Twitter"
     ></app-reseau-social>
-</div>   
+</div> 
+Troisième façon de faire  
+<div *ngFor="let reseau of listeReseauxSociaux">
+    <app-reseau-social 
+        nomReseauSocial={{reseau.nom}}
+        lienHypertexte={{reseau.lienHyperTexte}}
+        lienImageReseauSocial={{reseau.lienImage}} >
+    </app-reseau-social>
+</div>
