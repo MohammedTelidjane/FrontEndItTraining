@@ -20,6 +20,8 @@ import { PageListeFormateurComponent } from './pages/page-liste-formateur/page-l
 import { PageFormulaireFormateurComponent } from './pages/page-formulaire-formateur/page-formulaire-formateur.component';
 import { PageFormulaireModifFormateurComponent } from './pages/page-formulaire-modif-formateur/page-formulaire-modif-formateur.component';
 import { AfficheListeEtModifieFormateurComponent } from './features/formateur/affiche-liste-et-modifie-formateur/affiche-liste-et-modifie-formateur.component';
+import { FooterComponent } from './commons/footers/footer/footer.component';
+import { AccueilTempComponent } from './pages/accueil-temp/accueil-temp.component';
 
 
 @NgModule({
@@ -38,7 +40,9 @@ import { AfficheListeEtModifieFormateurComponent } from './features/formateur/af
     PageListeFormateurComponent,
     PageFormulaireFormateurComponent,
     PageFormulaireModifFormateurComponent,
-    AfficheListeEtModifieFormateurComponent
+    AfficheListeEtModifieFormateurComponent,
+    FooterComponent,
+    AccueilTempComponent
  
   ],
   imports: [
