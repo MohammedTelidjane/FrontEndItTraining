@@ -7,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ReseauxSociauxComponent implements OnInit {
 
+  // listeReseauxSociaux:reseau[] = [
+  //   {nom:"Twitter", lienImage: "M", lienHyperTexte:"Roux"},
+  //   {nom:"Facebook", lienImage: "", lienHyperTexte:"Roux"}
+  // ]
+
   constructor() { }
 
   ngOnInit(): void {

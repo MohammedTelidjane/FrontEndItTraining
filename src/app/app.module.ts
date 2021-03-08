@@ -23,6 +23,7 @@ import { AfficheListeEtModifieFormateurComponent } from './features/formateur/af
 import { FooterComponent } from './commons/footers/footer/footer.component';
 import { AccueilTempComponent } from './pages/accueil-temp/accueil-temp.component';
 import { ReseauxSociauxComponent } from './commons/footers/reseaux-sociaux/reseaux-sociaux.component';
+import { ReseauSocialComponent } from './commons/footers/reseau-social/reseau-social.component';
 
 
 @NgModule({
@@ -44,7 +45,8 @@ import { ReseauxSociauxComponent } from './commons/footers/reseaux-sociaux/resea
     AfficheListeEtModifieFormateurComponent,
     FooterComponent,
     AccueilTempComponent,
-    ReseauxSociauxComponent
+    ReseauxSociauxComponent,
+    ReseauSocialComponent
  
   ],
   imports: [
