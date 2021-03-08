@@ -24,6 +24,8 @@ import { FooterComponent } from './commons/footers/footer/footer.component';
 import { AccueilTempComponent } from './pages/accueil-temp/accueil-temp.component';
 import { ReseauxSociauxComponent } from './commons/footers/reseaux-sociaux/reseaux-sociaux.component';
 import { ReseauSocialComponent } from './commons/footers/reseau-social/reseau-social.component';
+import { InfosDiversesComponent } from './commons/footers/infos-diverses/infos-diverses.component';
+import { ContactsServicesComponent } from './commons/footers/contacts-services/contacts-services.component';
 
 
 @NgModule({
@@ -46,7 +48,9 @@ import { ReseauSocialComponent } from './commons/footers/reseau-social/reseau-so
     FooterComponent,
     AccueilTempComponent,
     ReseauxSociauxComponent,
-    ReseauSocialComponent
+    ReseauSocialComponent,
+    InfosDiversesComponent,
+    ContactsServicesComponent
  
   ],
   imports: [
