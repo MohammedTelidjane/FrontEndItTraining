@@ -9,7 +9,7 @@ import { Formation } from './models/Formation';
 })
 export class AppComponent {
   title = 'FrontEndItTraining';
-  formations:Formation[]=[];
+  // formations:Formation[]=[];
   values:string[]=[];
   text: string;
   checked: boolean = false;
@@ -24,9 +24,9 @@ export class AppComponent {
   constructor(){}
   ajouterFormation(nouvelleFormation:Formation){
 
-    this.formations.push(nouvelleFormation);
-    console.log("composant_parent");
-    console.log(this.formations);
+    // this.formations.push(nouvelleFormation);
+    // console.log("composant_parent");
+    // console.log(this.formations);
   
   }
 

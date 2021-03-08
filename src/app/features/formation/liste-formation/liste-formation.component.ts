@@ -41,6 +41,7 @@ export class ListeFormationComponent implements OnInit {
     this.formationService.findAll().subscribe(res=>this.formations=res);
     console.log("verifier findall3");
     console.log(this.formations);
+    console.log("verifier findall4");
    // this.router.navigate(['/listeFormationsAdministrateur']);
  }
   SupprimerParId(id:number):void{
