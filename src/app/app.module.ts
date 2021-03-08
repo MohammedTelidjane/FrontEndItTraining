@@ -28,6 +28,9 @@ import { CardParticipantComponent } from './features/participant/card-participan
 import { RechercheSessionComponent } from './features/session/recherche-session/recherche-session.component';
 import { ListParticipantComponent } from './features/participant/list-participant/list-participant.component';
 import { FormulaireParticipantComponent } from './features/participant/formulaire-participant/formulaire-participant.component';
+import { HeaderComponent } from './commons/header/header.component';
+import { SessionComponent } from './pages/session/session.component';
+import { ParticipantComponent } from './pages/participant/participant.component';
 
 
 
@@ -50,7 +53,10 @@ import { FormulaireParticipantComponent } from './features/participant/formulair
     CardParticipantComponent,
     RechercheSessionComponent,
     ListParticipantComponent,
-    FormulaireParticipantComponent
+    FormulaireParticipantComponent,
+    HeaderComponent,
+    SessionComponent,
+    ParticipantComponent
   ],
 
   imports: [
