@@ -26,6 +26,7 @@ import { ReseauxSociauxComponent } from './commons/footers/reseaux-sociaux/resea
 import { ReseauSocialComponent } from './commons/footers/reseau-social/reseau-social.component';
 import { InfosDiversesComponent } from './commons/footers/infos-diverses/infos-diverses.component';
 import { ContactsServicesComponent } from './commons/footers/contacts-services/contacts-services.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -60,6 +61,7 @@ import { ContactsServicesComponent } from './commons/footers/contacts-services/c
     ReactiveFormsModule,
     HttpClientModule,
     ButtonModule,
+    BrowserAnimationsModule,
 
   ],
   providers: [],
