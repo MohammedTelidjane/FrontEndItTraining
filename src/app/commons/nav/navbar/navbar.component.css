@@ -7,8 +7,7 @@
 .menu-bar{
     background-color: rgb(94, 94, 156);
     text-align: center;
-    
-
+    position: fixed;
 }
 
 .menu-bar ul{

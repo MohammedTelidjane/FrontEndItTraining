@@ -1,5 +1,5 @@
 
-<p>liste-formation works!</p>
+<!-- <p>liste-formation works!</p> -->
 
 
 <!-- <form class="formulaireformation" [formGroup]="formationForm" (ngSubmit)="onSubmit()">
@@ -14,12 +14,12 @@
     
     </form> -->
     
-<app-formulaire-formation></app-formulaire-formation>
+<!-- <app-formulaire-formation></app-formulaire-formation> -->
 
-<div>
+<!-- <div>
     <button  class="boutonRecupererToutesLFormations" type="submit" (click)="recupererToutesFormations()" >Récuperer Toutes les Formations</button> 
-</div>
 
+</div> -->
 <!--  avec classe
 <div class="carteFormation" *ngFor="let formation of formations">
 <div class="carteFormation" *ngFor="let formation of formations">
@@ -37,23 +37,22 @@
 </div>  -->
 
 
-<div  *ngFor="let formation of formations">
-    <app-card-formation [formation]="formation"></app-card-formation>
-    <p>Id : <span class="nom">{{formation.id}}</span></p>
-    <!-- <p>Nom : <span class="nom">{{formation.titre}}</span></p> -->
-    <!-- <p>Description : <span class="nom">{{formation.description}}</span></p> -->
+<div >
+    <app-card-formation *ngFor="let formation of formations" 
+    [formation]="formation"></app-card-formation>
 
+
+    <!-- <p>Id : <span class="nom">{{formation.id}}</span></p>
     <div>
         <label>
-            Nom:<input id ="myInputChampText"type="text" >
+            Nom:<input type="text" #boxTitre> <br>
         </label>
         <br/><br/>
-         <label>Description:</label> <textarea id="myInputEditor" cols="30" rows="4"></textarea> 
+          <label>Description:</label> <textarea cols="30" rows="4" #boxDescription></textarea> 
     </div>
     <br/><br/>
     <button  class="SupprimerParId" type="submit" (click)="SupprimerParId(formation.id)" >Supprimer une formation</button>
-    <button  class="SupprimerParId" type="submit" (click)="MettreAJourUneFormation(formation)" > Mettre à jour une formation</button>
-    <!-- <button  class="SupprimerParId" type="submit" > Chercher une formation par Id</button> -->
+    <button  class="SupprimerParId" type="submit" (click)="MettreAJourUneFormation(formation,boxTitre.value,boxDescription.value)" > Mettre à jour une formation</button> -->
 
 </div>  
 

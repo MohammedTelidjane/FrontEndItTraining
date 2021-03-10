@@ -49,6 +49,7 @@ import { FormulaireParticipantComponent } from './features/participant/formulair
 import { HeaderComponent } from './commons/header/header.component';
 import { SessionComponent } from './pages/session/session.component';
 import { ParticipantComponent } from './pages/participant/participant.component';
+import { PageAdministrateurLoginComponent } from './pages/page-administrateur-login/page-administrateur-login.component';
 
 
 
@@ -88,7 +89,8 @@ import { ParticipantComponent } from './pages/participant/participant.component'
     FormulaireParticipantComponent,
     HeaderComponent,
     SessionComponent,
-    ParticipantComponent
+    ParticipantComponent,
+    PageAdministrateurLoginComponent
   ],
 
   imports: [

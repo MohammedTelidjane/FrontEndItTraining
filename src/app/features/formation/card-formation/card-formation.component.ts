@@ -10,6 +10,7 @@ import { FormationService } from 'src/app/services/formation.service';
 })
 export class CardFormationComponent implements OnInit, OnChanges {
  @Input() formation: Formation;
+ 
    //formations: Formation[]=[];
 
   constructor(private router:Router, private formationService:FormationService ) { 
@@ -25,13 +26,13 @@ export class CardFormationComponent implements OnInit, OnChanges {
   
   ngOnChanges(ttt:any){
     console.log("verifier donneé coté card")
-    //console.log(this.formations)
+    console.log(this.formation)
   }
 
   ngOnInit(): void {
-    //console.log(this.formations);
+    // console.log("d");
+    // console.log(this.formation);
+    // console.log("e");
   }
   
-  
-
 }

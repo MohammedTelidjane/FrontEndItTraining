@@ -26,7 +26,32 @@ export class PageFormationAdministrateurComponent implements OnInit {
     console.log(this.formations);
    // this.router.navigate(['/listeFormationsAdministrateur']);
  }
+ SupprimerParId(id:number):void{
+   console.log("verifier delete pageadmin1");
+  this.formationService.delete(id).subscribe();
+  console.log("verifier delete pageadmin2");
 
+} 
+
+MettreAJourUneFormation(formation:Formation,valTitre:string,valDescription:string):void{
+ // console.log("avant les inputs");
+ // console.log(formation.id);
+ // console.log(formation.titre);
+ // console.log(formation.description);
+// let inputValDescription = (<HTMLInputElement>document.getElementById("myInputEditor")).value;
+// let inputValTitre = (<HTMLInputElement>document.getElementById("myInputChampText")).value;
+console.log(formation);
+//  formation.description=inputValDescription;
+//  formation.titre=inputValTitre;
+formation.titre=valTitre;
+formation.description=valDescription;
+ //console.log("avant dappler save");
+// console.log(formation.description);
+// console.log(formation.titre);
+ this.formationService.save(formation).subscribe(console.log);
+ //console.log("apresdappler save");
+
+}
   ngOnInit(): void {
     this.formationService.findAll().subscribe(res=>this.formations=res);
   }

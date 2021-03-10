@@ -7,7 +7,13 @@ import { Participant } from 'src/app/models/participant';
   styleUrls: ['./participant.component.css']
 })
 export class ParticipantComponent implements OnInit {
+<<<<<<< HEAD
   
+=======
+
+
+
+>>>>>>> b9f086e42aad3f42ecbe5d91ce1899ab7ff2feea
   constructor() { }
 
   ngOnInit(): void {

@@ -1,0 +1,10 @@
+<!-- <p>page-administrateur-login works!</p> -->
+<br><br>
+<label>
+    Identifiant:<input type="text" #boxId> <br>
+</label>
+<br/><br/>
+  <label>Mot de passe:</label> <input type="text"#boxMdp>
+<br/><br/>
+<button  class="SupprimerParId" type="submit" (click)="connexion(boxId.value,boxMdp.value)" > Se connecté</button> 
+<h4>{{messageErreur}}</h4>
