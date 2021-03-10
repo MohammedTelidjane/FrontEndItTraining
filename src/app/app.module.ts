@@ -50,6 +50,19 @@ import { HeaderComponent } from './commons/header/header.component';
 import { SessionComponent } from './pages/session/session.component';
 import { ParticipantComponent } from './pages/participant/participant.component';
 import { PageAdministrateurLoginComponent } from './pages/page-administrateur-login/page-administrateur-login.component';
+import { MatSliderModule } from '@angular/material/slider';
+import { PageTableauDeBordComponent } from './pages/page-tableau-de-bord/page-tableau-de-bord.component';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatIconModule} from '@angular/material/icon';
+import {MatCardModule} from '@angular/material/card';
+import {MatButtonModule} from '@angular/material/button';
+import {MatInputModule} from '@angular/material/input';
+
+
+
+
+
+
 
 
 
@@ -90,7 +103,8 @@ import { PageAdministrateurLoginComponent } from './pages/page-administrateur-lo
     HeaderComponent,
     SessionComponent,
     ParticipantComponent,
-    PageAdministrateurLoginComponent
+    PageAdministrateurLoginComponent,
+    PageTableauDeBordComponent
   ],
 
   imports: [
@@ -99,13 +113,16 @@ import { PageAdministrateurLoginComponent } from './pages/page-administrateur-lo
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    ButtonModule,
     BrowserAnimationsModule,
-    // ChipsModule,
-    // EditorModule,
-    // InputSwitchModule,
-    // SplitButtonModule,
-    // ButtonModule
+    MatSliderModule,
+    MatFormFieldModule,
+    MatIconModule,
+    BrowserAnimationsModule,
+    MatCardModule,
+    MatButtonModule,
+    MatInputModule
+    
+
   ],
   providers: [],
   bootstrap: [AppComponent]
