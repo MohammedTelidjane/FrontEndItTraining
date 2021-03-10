@@ -9,7 +9,7 @@ import { ParticipantService } from 'src/app/services/participant.service';
 })
 export class ListParticipantComponent implements OnInit {
 
-  @Input() listParticipant: Participant[];
+  listParticipant: Participant[];
 
   constructor(private participantService: ParticipantService) { }
 
