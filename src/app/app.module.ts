@@ -6,8 +6,26 @@ import { AppComponent } from './app.component';
 import { FormulaireThemeComponent } from './features/theme/formulaire-theme/formulaire-theme.component';
 import { ListeThemeComponent } from './features/theme/liste-theme/liste-theme.component';
 import { CardThemeComponent } from './features/theme/card-theme/card-theme.component';
-import { FormBuilder, FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CardFormateurComponent } from './features/formateur/card-formateur/card-formateur.component';
+import { ListeFormateurComponent } from './features/formateur/liste-formateur/liste-formateur.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import {ButtonModule} from 'primeng/button';
+import { FormFormateurComponent } from './features/formateur/form-formateur/form-formateur.component';
+import { AssocierFormateurAFormationComponent } from './pages/associer-formateur-aformation/associer-formateur-aformation.component';
+import { PageListeFormateurComponent } from './pages/page-liste-formateur/page-liste-formateur.component';
+import { PageFormulaireFormateurComponent } from './pages/page-formulaire-formateur/page-formulaire-formateur.component';
+import { PageFormulaireModifFormateurComponent } from './pages/page-formulaire-modif-formateur/page-formulaire-modif-formateur.component';
+import { AfficheListeEtModifieFormateurComponent } from './features/formateur/affiche-liste-et-modifie-formateur/affiche-liste-et-modifie-formateur.component';
+import { FooterComponent } from './commons/footers/footer/footer.component';
+import { AccueilTempComponent } from './pages/accueil-temp/accueil-temp.component';
+import { ReseauxSociauxComponent } from './commons/footers/reseaux-sociaux/reseaux-sociaux.component';
+import { ReseauSocialComponent } from './commons/footers/reseau-social/reseau-social.component';
+import { InfosDiversesComponent } from './commons/footers/infos-diverses/infos-diverses.component';
+import { ContactsServicesComponent } from './commons/footers/contacts-services/contacts-services.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+// import { FormBuilder, FormsModule, ReactiveFormsModule } from '@angular/forms';
+// import { HttpClientModule } from '@angular/common/http';
 import { FormulaireFormationComponent } from './features//formation/formulaire-formation/formulaire-formation.component';
 import { ListeFormationComponent } from './features/formation/liste-formation/liste-formation.component';
 import { CardFormationComponent } from './features/formation/card-formation/card-formation.component';
@@ -41,6 +59,20 @@ import { PageAdministrateurLoginComponent } from './pages/page-administrateur-lo
     FormulaireThemeComponent,
     ListeThemeComponent,
     CardThemeComponent,
+    CardFormateurComponent,
+    ListeFormateurComponent,
+    FormFormateurComponent,
+    AssocierFormateurAFormationComponent,
+    PageListeFormateurComponent,
+    PageFormulaireFormateurComponent,
+    PageFormulaireModifFormateurComponent,
+    AfficheListeEtModifieFormateurComponent,
+    FooterComponent,
+    AccueilTempComponent,
+    ReseauxSociauxComponent,
+    ReseauSocialComponent,
+    InfosDiversesComponent,
+    ContactsServicesComponent,
     FormulaireFormationComponent,
     ListeFormationComponent,
     CardFormationComponent,
@@ -66,7 +98,9 @@ import { PageAdministrateurLoginComponent } from './pages/page-administrateur-lo
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ButtonModule,
+    BrowserAnimationsModule,
     // ChipsModule,
     // EditorModule,
     // InputSwitchModule,

@@ -1,0 +1,22 @@
+.cardFormateur{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+ .champ{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.formateurIdentite + .formateurContact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div{
+    width: fit-content;
+}
