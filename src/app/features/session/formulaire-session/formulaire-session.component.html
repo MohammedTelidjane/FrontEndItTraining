@@ -1,0 +1,16 @@
+<form [formGroup]="sessionForm" (ngSubmit)="onSubmit()">
+    <h1>Ajouter une session</h1> 
+    <label>
+        Prix hors taxe :
+        <input type="number" formControlName="prixHt" />
+    </label>
+    <label>
+        Date de début : 
+        <input type="text" formControlName="dateDebut" />
+    </label>
+    <label>
+        Date de fin :
+        <input type="text" formControlName="dateFin" />
+    </label>
+    <button type="submit">Envoyer la session</button>
+</form>

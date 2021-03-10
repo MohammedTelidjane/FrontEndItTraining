@@ -1,0 +1,22 @@
+.carteFormation{
+    width: 200px;
+    height: 200px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    background-color: rgb(229, 229, 248);
+    color: rgb(138, 9, 9);
+    
+   
+}
+
+.nom{
+    color: black;
+}
+
+#bb{
+    color:white;
+    margin-bottom: 0;
+    margin-left: 40px;
+    margin-top: 5px;
+}

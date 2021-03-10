@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FomulaireFormationComponent } from './fomulaire-formation.component';
+import { ListSessionComponent } from './list-session.component';
 
-describe('FomulaireFormationComponent', () => {
-  let component: FomulaireFormationComponent;
-  let fixture: ComponentFixture<FomulaireFormationComponent>;
+describe('ListSessionComponent', () => {
+  let component: ListSessionComponent;
+  let fixture: ComponentFixture<ListSessionComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ FomulaireFormationComponent ]
+      declarations: [ ListSessionComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(FomulaireFormationComponent);
+    fixture = TestBed.createComponent(ListSessionComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

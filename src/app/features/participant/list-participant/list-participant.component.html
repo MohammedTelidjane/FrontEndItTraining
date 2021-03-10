@@ -1,0 +1,9 @@
+<h1>Listes des particpants :</h1>
+<div class="list-participant">
+    <app-card-participant *ngFor="let participant of listParticipant"
+    [part]="participant"
+    (delete)="onDelete(participant)">
+
+    </app-card-participant>
+</div>
+
