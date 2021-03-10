@@ -19,11 +19,9 @@ const routes: Routes = [
   //{path:'listesFromationsUtilisateur', component:CardFormationComponent},
   {path:'pageformationutilisateur',component:PageFormationUtilisateurComponent},
   {path:'detailFormation' , component: DetailFormationComponent},
-  {path:'pageAdministrateurLogin' , component: PageAdministrateurLoginComponent}
+  {path:'pageAdministrateurLogin' , component: PageAdministrateurLoginComponent},
+  {path:'FormationUtilisateur' , component: PageFormationUtilisateurComponent}
   
-  
-
-
 ];
 
 @NgModule({
