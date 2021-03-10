@@ -7,9 +7,7 @@ import { Participant } from 'src/app/models/participant';
   styleUrls: ['./participant.component.css']
 })
 export class ParticipantComponent implements OnInit {
-
-  // listPart: Participant[] = [];
-
+  
   constructor() { }
 
   ngOnInit(): void {
