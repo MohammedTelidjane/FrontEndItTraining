@@ -50,6 +50,7 @@ import { HeaderComponent } from './commons/header/header.component';
 import { SessionComponent } from './pages/session/session.component';
 import { ParticipantComponent } from './pages/participant/participant.component';
 import { PageAdministrateurLoginComponent } from './pages/page-administrateur-login/page-administrateur-login.component';
+import { PageFormulaireParticipantComponent } from './pages/page-formulaire-participant/page-formulaire-participant.component';
 
 
 
@@ -90,7 +91,8 @@ import { PageAdministrateurLoginComponent } from './pages/page-administrateur-lo
     HeaderComponent,
     SessionComponent,
     ParticipantComponent,
-    PageAdministrateurLoginComponent
+    PageAdministrateurLoginComponent,
+    PageFormulaireParticipantComponent
   ],
 
   imports: [
