@@ -10,6 +10,7 @@ import { FormationService } from 'src/app/services/formation.service';
 })
 export class CardFormationComponent implements OnInit, OnChanges {
  @Input() formation: Formation;
+ 
    //formations: Formation[]=[];
 
   constructor(private router:Router, private formationService:FormationService ) { 
@@ -29,11 +30,9 @@ export class CardFormationComponent implements OnInit, OnChanges {
   }
 
   ngOnInit(): void {
-    console.log("d");
-    console.log(this.formation);
-    console.log("e");
+    // console.log("d");
+    // console.log(this.formation);
+    // console.log("e");
   }
   
-  
-
 }

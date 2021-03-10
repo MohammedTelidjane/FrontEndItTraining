@@ -5,7 +5,7 @@
     /* justify-content: space-around; */
     border:midnightblue;
     border-style: solid;
-    width: 250px;
+    width: 480px;
     padding: 10px;
     margin-left: 10px;
 }
@@ -18,7 +18,7 @@
  .buttonAjouterFormation{
         background-color: navy;
         color: rgb(223, 223, 248);
-        margin-left: 50px;
+        margin-left: 150px;
     }
 
 

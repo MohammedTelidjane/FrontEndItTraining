@@ -8,7 +8,7 @@ import { Participant } from 'src/app/models/participant';
 })
 export class ParticipantComponent implements OnInit {
 
-  listPart: Participant[] = [];
+ // listPart: Participant[] = [];
 
   constructor() { }
 

@@ -71,7 +71,6 @@ export class ListeFormationComponent implements OnInit {
   }
   ngOnInit(): void {
     this.formationService.findAll().subscribe(res=>this.formations=res);
-
   }
 
 }

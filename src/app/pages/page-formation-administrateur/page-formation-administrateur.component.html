@@ -1,20 +1,35 @@
 <p>page-formation-administrateur works!</p>
-<app-liste-formation></app-liste-formation>
-
-
-
-
-<!-- <div>
+<app-formulaire-formation></app-formulaire-formation> 
+<div>
     <button  class="boutonRecupererToutesLFormations" type="submit" (click)="recupererToutesFormations()" >Récuperer Toutes les Formations</button> 
 
-</div> -->
-<!-- <p-editor  [(ngModel)]="text1" [style]="{'height':'300px'}"></p-editor> -->
+</div> 
+<!-- <app-liste-formation></app-liste-formation> -->
 
- <!-- <div class="carteFormation" *ngFor="let formation of formations">
+
+
+
+<!-- <div class="carteFormation" *ngFor="let formation of formations"> -->
+<div class="carteFormation" *ngFor="let formation of formations">
     <p>Id : <span class="nom">{{formation.id}}</span></p>
     <p>Nom : <span class="nom">{{formation.titre}}</span></p>
     <p>Description : <span class="nom">{{formation.description}}</span></p>
-    <button  class="SupprimerParId" type="submit" (click)="SupprimerParId(formation.id)" >Supprimer une formation par Id</button>
-    <button  class="SupprimerParId" type="submit" > Mettre à jour une formation</button>
-    <button  class="SupprimerParId" type="submit" > Chercher une formation par Id</button>
-</div>    -->
+    <!-- <button  class="SupprimerParId" type="submit" (click)="SupprimerParId(formation.id)" >Supprimer une formation par Id</button> -->
+    <!-- <button  class="SupprimerParId" type="submit" > Mettre à jour une formation</button> -->
+
+    <div>
+        <label>
+            Nom:<input type="text" #boxTitre> <br>
+        </label>
+        <br/><br/>
+          <label>Description:</label> <textarea cols="60" rows="10" #boxDescription></textarea> 
+    </div>
+    <br/><br/>
+    <button  class="SupprimerParId" type="submit" (click)="SupprimerParId(formation.id)" >Supprimer une formation</button>
+    <button  class="SupprimerParId" type="submit" (click)="MettreAJourUneFormation(formation,boxTitre.value,boxDescription.value)" > Mettre à jour une formation</button> 
+</div> 
+
+
+
+
+
