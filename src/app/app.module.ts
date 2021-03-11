@@ -57,6 +57,8 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
 import {MatInputModule} from '@angular/material/input';
+import {MatListModule} from '@angular/material/list';
+import { PageFormulaireFormationComponent } from './pages/page-formulaire-formation/page-formulaire-formation.component';
 
 
 
@@ -104,7 +106,8 @@ import {MatInputModule} from '@angular/material/input';
     SessionComponent,
     ParticipantComponent,
     PageAdministrateurLoginComponent,
-    PageTableauDeBordComponent
+    PageTableauDeBordComponent,
+    PageFormulaireFormationComponent
   ],
 
   imports: [
@@ -120,7 +123,8 @@ import {MatInputModule} from '@angular/material/input';
     BrowserAnimationsModule,
     MatCardModule,
     MatButtonModule,
-    MatInputModule
+    MatInputModule,
+    MatListModule
     
 
   ],

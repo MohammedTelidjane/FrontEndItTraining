@@ -1,14 +1,14 @@
-<p>formulaire-formation works!</p>
 
-<form class="formulaireformation" [formGroup]="formationForm" (ngSubmit)="onSubmit()">
+
+<form class="formulaireformation" [formGroup]="formationForm" >
 
 <label>
-        Titre:<input type="text" formControlName="titre">
+        Titre:<input type="text" formControlName="titre" #champTitre>
     </label>
     <label><br/><br/>
         <!-- Description:<input type="text" formControlName="description" class="inputDescription"> -->
-        Description:<textarea cols="60" rows="10" ></textarea> 
+        Description:<textarea cols="60" rows="10" #champDescription></textarea> 
     </label><br/><br/>
-    <button class="buttonAjouterFormation" type="submit">Ajouter Formation</button>
+    <button class="buttonAjouterFormation" type="submit" (click)="onSubmit(champDescription.value,champTitre.value)">Ajouter Formation</button>
 
 </form>

@@ -8,8 +8,7 @@ import { Formation } from './models/Formation';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  hide = true;
-  hideDescription =true;
+
   title = 'FrontEndItTraining';
   // formations:Formation[]=[];
   values:string[]=[];
@@ -25,11 +24,7 @@ export class AppComponent {
 
   constructor(){}
 
-  seConnecter(motDePasse:string,description:string):void{
-    console.log(motDePasse);
-    console.log(description);
 
-  }
   ajouterFormation(nouvelleFormation:Formation){
 
     // this.formations.push(nouvelleFormation);

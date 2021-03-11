@@ -27,9 +27,9 @@ export class PageFormationAdministrateurComponent implements OnInit {
    // this.router.navigate(['/listeFormationsAdministrateur']);
  }
  SupprimerParId(id:number):void{
-   console.log("verifier delete pageadmin1");
+  //  console.log("verifier delete pageadmin1");
   this.formationService.delete(id).subscribe();
-  console.log("verifier delete pageadmin2");
+  // console.log("verifier delete pageadmin2");
 
 } 
 
@@ -46,8 +46,8 @@ console.log(formation);
 formation.titre=valTitre;
 formation.description=valDescription;
  //console.log("avant dappler save");
-// console.log(formation.description);
-// console.log(formation.titre);
+//  console.log(formation.description);
+//  console.log(formation.titre);
  this.formationService.save(formation).subscribe(console.log);
  //console.log("apresdappler save");
 

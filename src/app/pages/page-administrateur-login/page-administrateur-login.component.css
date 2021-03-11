@@ -6,9 +6,9 @@
   margin-top: 40px;
   border: solid;
   border-block-color: inherit;
-  border-block-color: rgba(99, 71, 18, 0.87);
-    border-left-color: rgba(99, 71, 18, 0.87);
-    border-right-color: rgba(99, 71, 18, 0.87); ;
+  border-block-color: rgba(37, 109, 204, 0.87);
+    border-left-color: rgba(37, 109, 204, 0.87);
+    border-right-color: rgba(37, 109, 204, 0.87);
     border-width: 5px;
 }
 

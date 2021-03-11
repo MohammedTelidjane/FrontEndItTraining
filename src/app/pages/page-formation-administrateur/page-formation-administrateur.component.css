@@ -1,0 +1,28 @@
+.pageAdmin {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 200px;
+  }
+
+  #champDescription{
+      width:600px;
+  }
+.boutonSupprimerMettreAjour{
+/* border:solid 1px black; */
+width:400px ;
+display:flex;
+justify-content: space-around;
+margin-left: 100px;
+}
+
+.groupementTableauBordPageFormationAdmin{
+    display: flex;
+    
+}
+
+.affichageListeFormations{
+    margin-top: 120px;
+    margin-left: 280px;
+   
+}
