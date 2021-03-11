@@ -60,6 +60,7 @@ import { MatInputModule } from '@angular/material/input';
 import { AccueilComponent } from './pages/accueil/accueil.component';
 import { MatSliderModule } from '@angular/material/slider';
 import { NgMatSearchBarModule } from 'ng-mat-search-bar';
+import { QuiSommesNousComponent } from './pages/qui-sommes-nous/qui-sommes-nous.component';
 
 
 
@@ -102,7 +103,8 @@ import { NgMatSearchBarModule } from 'ng-mat-search-bar';
     ParticipantComponent,
     PageAdministrateurLoginComponent,
     PageFormulaireParticipantComponent,
-    AccueilComponent
+    AccueilComponent,
+    QuiSommesNousComponent
   ],
 
   imports: [
