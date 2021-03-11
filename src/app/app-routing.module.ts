@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { DetailFormationComponent } from './features/detail-formation/detail-formation.component';
 import { CardFormationComponent } from './features/formation/card-formation/card-formation.component';
 import { ListeFormationComponent } from './features/formation/liste-formation/liste-formation.component';
+import { AccueilComponent } from './pages/accueil/accueil.component';
 import { PageAdministrateurLoginComponent } from './pages/page-administrateur-login/page-administrateur-login.component';
 import { PageFormationAdministrateurComponent } from './pages/page-formation-administrateur/page-formation-administrateur.component';
 import { PageFormationUtilisateurComponent } from './pages/page-formation-utilisateur/page-formation-utilisateur.component';
@@ -11,6 +12,7 @@ import { PageFormulaireModifFormateurComponent } from './pages/page-formulaire-m
 import { PageListeFormateurComponent } from './pages/page-liste-formateur/page-liste-formateur.component';
 
 const routes: Routes = [
+  {path:"", component: AccueilComponent},
   {path:"FormulaireFormateur", component:PageFormulaireFormateurComponent},
   {path:"ListeFormateur", component:PageListeFormateurComponent},
   {path:"FormulaireModificationFormateur", component:PageFormulaireModifFormateurComponent},
@@ -19,8 +21,8 @@ const routes: Routes = [
   //{path:'listesFromationsUtilisateur', component:CardFormationComponent},
   {path:'pageformationutilisateur',component:PageFormationUtilisateurComponent},
   {path:'detailFormation' , component: DetailFormationComponent},
-  {path:'pageAdministrateurLogin' , component: PageAdministrateurLoginComponent}
-  
+  {path:'pageAdministrateurLogin' , component: PageAdministrateurLoginComponent},
+  {path: '**', component: AccueilComponent}
   
 
 

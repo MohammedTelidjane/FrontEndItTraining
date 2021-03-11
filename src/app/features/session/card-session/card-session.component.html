@@ -4,6 +4,22 @@
     <p>Date de début : {{sess.dateDebut}}</p>
     <p>Date de fin : {{sess.dateFin}}</p>
     <p>Liste des participants : {{sess.participants}}</p>
-    
-    <button (click)="onDelete()">Supprimer la session</button>
+    <button (click)="onDelete()">Supprimer la session</button>    
 </div>
+
+<form [formGroup]="sessionForm">
+    <h1>Mettre à jour la session</h1> 
+    <label>
+        Prix hors taxe :
+        <input type="number" formControlName="prixHt" />
+    </label>
+    <label>
+        Date de début : 
+        <input type="text" formControlName="dateDebut" />
+    </label>
+    <label>
+        Date de fin :
+        <input type="text" formControlName="dateFin" />
+    </label>
+    <button (click)="onUpdate()">Mettre à jour la session</button>
+</form>
