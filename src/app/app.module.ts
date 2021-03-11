@@ -52,6 +52,7 @@ import { ParticipantComponent } from './pages/participant/participant.component'
 import { PageAdministrateurLoginComponent } from './pages/page-administrateur-login/page-administrateur-login.component';
 import { AccueilComponent } from './pages/accueil/accueil.component';
 import { MatSliderModule } from '@angular/material/slider';
+import { NgMatSearchBarModule } from 'ng-mat-search-bar';
 
 
 
@@ -104,7 +105,8 @@ import { MatSliderModule } from '@angular/material/slider';
     HttpClientModule,
     ButtonModule,
     BrowserAnimationsModule,
-    MatSliderModule
+    MatSliderModule,
+    NgMatSearchBarModule
     // ChipsModule,
     // EditorModule,
     // InputSwitchModule,

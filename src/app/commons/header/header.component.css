@@ -28,6 +28,11 @@ a:hover {
     color: #4383ab;
 }
 
-.connexion-admin {
+.search {
     margin: 35px;
+    margin-right: -300px;
+}
+
+.connexion-admin {
+    margin: 10px;
 }
