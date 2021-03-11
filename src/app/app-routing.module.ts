@@ -22,6 +22,8 @@ const routes: Routes = [
   {path:'pageformationutilisateur',component:PageFormationUtilisateurComponent},
   {path:'detailFormation' , component: DetailFormationComponent},
   {path:'pageAdministrateurLogin' , component: PageAdministrateurLoginComponent},
+  {path:'FormationUtilisateur' , component: PageFormationUtilisateurComponent},
+  
   {path: '**', component: AccueilComponent}
   
 

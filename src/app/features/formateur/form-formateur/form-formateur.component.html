@@ -1,11 +1,41 @@
 <button routerLink="/ListeFormateur"> Afficher la liste des formateurs </button>
 <form [formGroup]="formateurFormulaire" (ngSubmit)="ajouter()">    
-    <p>Nom: <input formControlName="nom"></p>
-    <p>Prenom: <input formControlName="prenom"></p>
-    <p>Date de naissance: <input formControlName="dateNaissance"></p>
+    <!-- <p>Nom: <input formControlName="nom"></p> -->
+    <!-- <p>Prenom: <input formControlName="prenom"></p>
+    <p>Date de naissance: <input formControlName="dateNaissance"></p> -->
     <!-- <p>Entreprise: <input formControlName="entreprise"></p> -->
-    <p>Telephone: <input formControlName="telephone"></p>
-    <p>Email: <input formControlName="email"></p>
-    <button type="submit"> {{messageButton}} </button>
+    <!-- <p>Telephone: <input formControlName="telephone"></p>
+    <p>Email: <input formControlName="email"></p> -->
+
+
+    <div class="conteneur-formulaire-formateur">
+        <mat-form-field>
+            <mat-label>Nom</mat-label>
+            <input matInput placeholder="Ex. Dujardin" formControlName="nom">
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Prenom</mat-label>
+            <input matInput placeholder="Ex. Jean" formControlName="prenom">
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Date de naissance</mat-label>
+            <input matInput placeholder="Ex. 25/12/1980" formControlName="dateNaissance">
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Telephone</mat-label>
+            <input matInput placeholder="Ex. 06 05 04 03 02" formControlName="telephone">
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Email</mat-label>
+            <input matInput placeholder="Ex. jean.dujardin@freelance.com" formControlName="email">
+        </mat-form-field>
+    </div>
+    
+    
+    <!-- <button type="submit"> {{messageButton}} </button> -->
+    <button type="submit" class="bouton-material-valider-new-formateur" mat-button color="primary" aria-label="Example icon button with a delete icon">
+        <mat-icon>done</mat-icon >
+            {{messageButton}}
+    </button>
     <p></p>
 </form>
