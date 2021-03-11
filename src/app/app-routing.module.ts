@@ -6,29 +6,38 @@ import { FormulaireFormationComponent } from './features/formation/formulaire-fo
 import { ListeFormationComponent } from './features/formation/liste-formation/liste-formation.component';
 import { ListParticipantComponent } from './features/participant/list-participant/list-participant.component';
 import { ListSessionComponent } from './features/session/list-session/list-session.component';
+import { AccueilComponent } from './pages/accueil/accueil.component';
 import { PageAdministrateurLoginComponent } from './pages/page-administrateur-login/page-administrateur-login.component';
 import { PageFormationAdministrateurComponent } from './pages/page-formation-administrateur/page-formation-administrateur.component';
 import { PageFormationUtilisateurComponent } from './pages/page-formation-utilisateur/page-formation-utilisateur.component';
 import { PageFormulaireFormateurComponent } from './pages/page-formulaire-formateur/page-formulaire-formateur.component';
 import { PageFormulaireFormationComponent } from './pages/page-formulaire-formation/page-formulaire-formation.component';
 import { PageFormulaireModifFormateurComponent } from './pages/page-formulaire-modif-formateur/page-formulaire-modif-formateur.component';
+import { PageFormulaireParticipantComponent } from './pages/page-formulaire-participant/page-formulaire-participant.component';
 import { PageListeFormateurComponent } from './pages/page-liste-formateur/page-liste-formateur.component';
 import { PageTableauDeBordComponent } from './pages/page-tableau-de-bord/page-tableau-de-bord.component';
+import { QuiSommesNousComponent } from './pages/qui-sommes-nous/qui-sommes-nous.component';
+
 
 const routes: Routes = [
+  {path:"", component: AccueilComponent},
+  {path:"qui-sommes-nous", component: QuiSommesNousComponent},
   {path:"FormulaireFormateur", component:PageFormulaireFormateurComponent},
   {path:"ListeFormateur", component:PageListeFormateurComponent},
   {path:"FormulaireModificationFormateur", component:PageFormulaireModifFormateurComponent},
   // {path:'cardFormations',component:CardFormationComponent}
   {path:'pageFormationsAdministrateur',component:PageFormationAdministrateurComponent},
-  //{path:'listesFromationsUtilisateur', component:CardFormationComponent},
   {path:'pageformationutilisateur',component:PageFormationUtilisateurComponent},
   {path:'detailFormation' , component: DetailFormationComponent},
   {path:'pageAdministrateurLogin' , component: PageAdministrateurLoginComponent},
   {path:'pageTableauDeBord' , component: PageTableauDeBordComponent},
   {path:'listeParticipants' , component: ListParticipantComponent},
   {path:'listeSessions' , component: ListSessionComponent},
-  {path:'pageFormulaireFormation' , component: PageFormulaireFormationComponent}
+  {path:'pageFormulaireFormation' , component: PageFormulaireFormationComponent},
+  {path:'FormationUtilisateur' , component: PageFormationUtilisateurComponent},
+  {path:'pageFormulaireParticipant' , component: PageFormulaireParticipantComponent},
+  
+  {path: '**', component: AccueilComponent}
   
 ];
 

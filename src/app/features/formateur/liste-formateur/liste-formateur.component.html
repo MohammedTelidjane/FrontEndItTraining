@@ -1,5 +1,9 @@
 <div class="listeFormateur">
-    <button routerLink="/FormulaireFormateur" > Ajouter un formateur</button>
+    <!-- <button routerLink="/FormulaireFormateur" > Ajouter un formateur</button> -->
+    <button class="bouton-material-add-formateur" mat-button color="primary" aria-label="Example icon button with a delete icon" routerLink="/FormulaireFormateur">
+        <mat-icon>add</mat-icon >
+        Ajouter un formateur
+    </button>
     <app-card-formateur 
         *ngFor="let formateur of formateurs"
         [formateur]="formateur"

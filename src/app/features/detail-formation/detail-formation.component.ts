@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-detail-formation',
@@ -7,8 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DetailFormationComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private router:Router) { }
+  DirigerVersFormulaireParticipant():void{
+this.router.navigate(['/pageFormulaireParticipant']);
+  }
   ngOnInit(): void {
   }
 

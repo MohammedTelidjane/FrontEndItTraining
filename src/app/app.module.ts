@@ -50,6 +50,7 @@ import { HeaderComponent } from './commons/header/header.component';
 import { SessionComponent } from './pages/session/session.component';
 import { ParticipantComponent } from './pages/participant/participant.component';
 import { PageAdministrateurLoginComponent } from './pages/page-administrateur-login/page-administrateur-login.component';
+
 import { MatSliderModule } from '@angular/material/slider';
 import { PageTableauDeBordComponent } from './pages/page-tableau-de-bord/page-tableau-de-bord.component';
 import {MatFormFieldModule} from '@angular/material/form-field';
@@ -60,10 +61,17 @@ import {MatInputModule} from '@angular/material/input';
 import {MatListModule} from '@angular/material/list';
 import { PageFormulaireFormationComponent } from './pages/page-formulaire-formation/page-formulaire-formation.component';
 
+import { PageFormulaireParticipantComponent } from './pages/page-formulaire-participant/page-formulaire-participant.component';
+// import { MatSliderModule} from '@angular/material/slider';
+// import { MatButtonModule } from '@angular/material/button';
+// import { MatIconModule } from '@angular/material/icon';
+// import { MatCardModule } from '@angular/material/card';
+// import { MatInputModule } from '@angular/material/input';
 
-
-
-
+import { AccueilComponent } from './pages/accueil/accueil.component';
+// import { MatSliderModule } from '@angular/material/slider';
+import { NgMatSearchBarModule } from 'ng-mat-search-bar';
+import { QuiSommesNousComponent } from './pages/qui-sommes-nous/qui-sommes-nous.component';
 
 
 
@@ -106,8 +114,12 @@ import { PageFormulaireFormationComponent } from './pages/page-formulaire-format
     SessionComponent,
     ParticipantComponent,
     PageAdministrateurLoginComponent,
+
     PageTableauDeBordComponent,
-    PageFormulaireFormationComponent
+    PageFormulaireFormationComponent,
+    PageFormulaireParticipantComponent,
+    AccueilComponent,
+    QuiSommesNousComponent
   ],
 
   imports: [
@@ -124,9 +136,9 @@ import { PageFormulaireFormationComponent } from './pages/page-formulaire-format
     MatCardModule,
     MatButtonModule,
     MatInputModule,
-    MatListModule
-    
-
+    MatListModule,
+    NgMatSearchBarModule
+ 
   ],
   providers: [],
   bootstrap: [AppComponent]

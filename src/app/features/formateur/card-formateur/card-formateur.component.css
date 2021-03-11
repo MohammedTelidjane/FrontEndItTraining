@@ -20,3 +20,21 @@
 div{
     width: fit-content;
 }
+
+.bouton-material-supprimer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    width: 30px;
+    height: 30px;
+}
+
+.bouton-material-update{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    width: 30px;
+    height: 30px;
+}

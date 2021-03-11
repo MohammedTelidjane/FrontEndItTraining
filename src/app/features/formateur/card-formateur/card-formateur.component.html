@@ -14,6 +14,12 @@
         <div class="formateurTelephone"> {{formateur.telephone}} </div>
         <div class="formateurEmail"> {{formateur.email}} </div>
     </div>
-    <button (click)="MettreAJourFormateur()"> Mettre à jour </button>
-    <button (click)="supprimerFormateur()"> Supprimer </button>
+    <!-- <button (click)="MettreAJourFormateur()"> Mettre à jour </button> -->
+    <button class="bouton-material-update" mat-fab color="primary" aria-label="Example icon button with a delete icon">
+        <mat-icon>autorenew</mat-icon >
+    </button>
+    <!-- <button (click)="supprimerFormateur()"> Supprimer </button> -->
+    <button class="bouton-material-supprimer" mat-fab color="primary" aria-label="Example icon button with a delete icon" (click)="supprimerFormateur()">
+        <mat-icon>delete</mat-icon >
+    </button>
 </div>

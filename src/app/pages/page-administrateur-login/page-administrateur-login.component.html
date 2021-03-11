@@ -1,6 +1,5 @@
 <!-- <p>page-administrateur-login works!</p> -->
 
-
 <div class="incriptionAdmin">
 <div class="example-container">
   <h3> Se connecter à IT Trainning Admin</h3>
@@ -15,7 +14,6 @@
   <mat-form-field appearance="fill">
     <mat-label>Entrer Votre Mot De Passe</mat-label>
     <input matInput [type]="hide ? 'password' : 'text'"  #boxMotDePass>
-    <!-- <button> -->
     <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
     <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
     </button>
@@ -41,3 +39,16 @@
 <br/><br/>
 <button  class="SupprimerParId" type="submit" (click)="connexion(boxId.value,boxMdp.value)" > Se connecté</button> 
 <h4>{{messageErreur}}</h4> -->
+
+<!-- <div class="contenu-global">
+  <br><br>
+  <label>
+      Identifiant:<input type="text" #boxId> <br>
+  </label>
+  <br/><br/>
+    <label>Mot de passe:</label> <input type="text"#boxMdp>
+  <br/><br/>
+  <button  class="SupprimerParId" type="submit" (click)="connexion(boxId.value,boxMdp.value)" > Se connecté</button> 
+  <h4>{{messageErreur}}</h4>
+</div> -->
+

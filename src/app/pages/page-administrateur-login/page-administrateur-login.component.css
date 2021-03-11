@@ -1,15 +1,17 @@
 
+
 .incriptionAdmin{
   width: 300px;
   height: 340px;
   margin-left: 600px;
-  margin-top: 40px;
+  margin-top: 240px;
   border: solid;
   border-block-color: inherit;
   border-block-color: rgba(37, 109, 204, 0.87);
     border-left-color: rgba(37, 109, 204, 0.87);
     border-right-color: rgba(37, 109, 204, 0.87);
     border-width: 5px;
+    position: fixed;
 }
 
 .example-container {
@@ -48,5 +50,7 @@ input.example-right-align {
   -moz-appearance: textfield;
 } 
 
-
+.contenu-global{
+    padding-bottom: 80px;
+}
 
