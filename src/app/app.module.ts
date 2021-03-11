@@ -53,7 +53,9 @@ import { PageAdministrateurLoginComponent } from './pages/page-administrateur-lo
 import { PageFormulaireParticipantComponent } from './pages/page-formulaire-participant/page-formulaire-participant.component';
 // import { MatSliderModule} from '@angular/material/slider';
 import { MatButtonModule } from '@angular/material/button';
-import { MatIconModule } from '@angular/material/icon'
+import { MatIconModule } from '@angular/material/icon';
+import { MatCardModule } from '@angular/material/card';
+import { MatInputModule } from '@angular/material/input';
 
 
 
@@ -108,7 +110,9 @@ import { MatIconModule } from '@angular/material/icon'
     ButtonModule,
     BrowserAnimationsModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    MatCardModule,
+    MatInputModule
     
     // MatSliderModule
     // ChipsModule,
