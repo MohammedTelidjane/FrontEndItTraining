@@ -51,6 +51,10 @@ import { SessionComponent } from './pages/session/session.component';
 import { ParticipantComponent } from './pages/participant/participant.component';
 import { PageAdministrateurLoginComponent } from './pages/page-administrateur-login/page-administrateur-login.component';
 import { PageFormulaireParticipantComponent } from './pages/page-formulaire-participant/page-formulaire-participant.component';
+// import { MatSliderModule} from '@angular/material/slider';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon'
+
 
 
 
@@ -103,6 +107,10 @@ import { PageFormulaireParticipantComponent } from './pages/page-formulaire-part
     HttpClientModule,
     ButtonModule,
     BrowserAnimationsModule,
+    MatButtonModule,
+    MatIconModule
+    
+    // MatSliderModule
     // ChipsModule,
     // EditorModule,
     // InputSwitchModule,
