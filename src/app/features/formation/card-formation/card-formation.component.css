@@ -1,15 +1,24 @@
 .carteFormation{
-    width: 200px;
+    width: 600px;
     height: 200px;
     border-width: 2px;
     border-style: solid;
     border-color: black;
-    background-color: rgb(229, 229, 248);
-    color: rgb(138, 9, 9);
+    background-color: rgb(234, 234, 245);
+    color: rgb(26, 22, 22);
+    margin-top: 40px;
+    margin-left: 450px;
     
    
 }
 
-.nom{
-    color: rgb(216, 47, 47);
+#nom{
+    color: rgb(240, 28, 28);
+    margin: 20px;
+    padding-top: 20px;
+}
+
+#boutonDetailFormation{
+    margin-top: 50px;
+    margin-left: 220px;
 }

@@ -1,13 +1,11 @@
 .formulaireformation{
-
-    /* display: flex; */
     flex-direction: column;
-    /* justify-content: space-around; */
-    border:midnightblue;
+    border: midnightblue;
     border-style: solid;
     width: 480px;
     padding: 10px;
-    margin-left: 10px;
+    margin-left: 500px;
+    margin-top: 100px;
 }
     
 .inputDescription{

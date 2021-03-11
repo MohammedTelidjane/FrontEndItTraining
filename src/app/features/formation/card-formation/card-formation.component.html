@@ -1,6 +1,11 @@
  <!-- <p>card-formation works!</p> -->
-    <p>Nom : <span class="nom">{{formation.titre}}</span> </p>
-    <p>Description : <span class="nom">{{formation.description}}</span></p>
-    <button pButton type="button" class="p-button-raised p-button-rounded" label=" " (click)="detailFormation()">Détail Formation</button>
+ <div class="carteFormation">
+    <p><span id="nom">Nom : </span>{{formation.titre}} </p>
+    <p><span id="nom">Description : </span>{{formation.description}}</p>
+    <!-- <button pButton type="button" class="p-button-raised p-button-rounded" label=" " 
+    (click)="detailFormation()">Détail Formation</button> -->
+
+    <button  type="submit" mat-raised-button (click)="detailFormation()" id="boutonDetailFormation">Détail Formation</button>
 
 
+   </div>
