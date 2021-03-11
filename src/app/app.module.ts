@@ -57,6 +57,9 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
 import { MatInputModule } from '@angular/material/input';
 
+import { AccueilComponent } from './pages/accueil/accueil.component';
+import { MatSliderModule } from '@angular/material/slider';
+import { NgMatSearchBarModule } from 'ng-mat-search-bar';
 
 
 
@@ -98,7 +101,8 @@ import { MatInputModule } from '@angular/material/input';
     SessionComponent,
     ParticipantComponent,
     PageAdministrateurLoginComponent,
-    PageFormulaireParticipantComponent
+    PageFormulaireParticipantComponent,
+    AccueilComponent
   ],
 
   imports: [
@@ -112,9 +116,11 @@ import { MatInputModule } from '@angular/material/input';
     MatButtonModule,
     MatIconModule,
     MatCardModule,
-    MatInputModule
+    MatInputModule,
     
     // MatSliderModule
+    MatSliderModule,
+    NgMatSearchBarModule
     // ChipsModule,
     // EditorModule,
     // InputSwitchModule,

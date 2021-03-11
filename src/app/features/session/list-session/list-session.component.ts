@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup } from '@angular/forms';
 import { Session } from 'src/app/models/session';
 import { SessionService } from 'src/app/services/session.service';
 
@@ -10,6 +11,7 @@ import { SessionService } from 'src/app/services/session.service';
 export class ListSessionComponent implements OnInit {
 
   @Input() listSession: Session[];
+  
 
   constructor(private sessionService: SessionService) { }
 
@@ -19,6 +21,14 @@ export class ListSessionComponent implements OnInit {
     this.listSession = response;
     console.log(response);
     })
+  }
+
+  onUpdate(session: Session, valDateDebut: string, valDateFin: string, valPrix): void {
+    console.log(session);
+    session.dateDebut = valDateDebut;
+    session.dateFin = valDateFin;
+    session.prixHt = valPrix;
+    this.sessionService.create(session).subscribe(console.log);
   }
 
   onDelete(session: Session) {
