@@ -121,11 +121,7 @@ import { NgMatSearchBarModule } from 'ng-mat-search-bar';
     // MatSliderModule
     MatSliderModule,
     NgMatSearchBarModule
-    // ChipsModule,
-    // EditorModule,
-    // InputSwitchModule,
-    // SplitButtonModule,
-    // ButtonModule
+ 
   ],
   providers: [],
   bootstrap: [AppComponent]
