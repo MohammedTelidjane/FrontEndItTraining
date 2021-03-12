@@ -1,8 +1,8 @@
 .footer{
-    background-color:grey;
+    background-color: rgb(94, 94, 156);
     position: fixed;
     bottom: 0px;
-    height: 90px;
+    height: 75px;
     width: 100%;
     display: flex;
     flex-direction: row-reverse;
