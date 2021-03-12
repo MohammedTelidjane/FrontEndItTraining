@@ -1,14 +1,33 @@
-<p>formulaire-formation works!</p>
 
-<form class="formulaireformation" [formGroup]="formationForm" (ngSubmit)="onSubmit()">
+ 
+<form class="formulaireformation" [formGroup]="formationForm" (ngSubmit)="onSubmit1()">
 
 <label>
-        Titre:<input type="text" formControlName="titre">
+        Titre:<input type="text" formControlName="titre" #champTitre>
     </label>
     <label><br/><br/>
-        <!-- Description:<input type="text" formControlName="description" class="inputDescription"> -->
-        Description:<textarea cols="60" rows="10" ></textarea> 
+        <!-- Description:<input type="text" formControlName="description" class="inputDescription">  -->
+        Description:<textarea cols="60" rows="10" formControlName="description" #champDescription></textarea>  
     </label><br/><br/>
-    <button class="buttonAjouterFormation" type="submit">Ajouter Formation</button>
+    <button class="buttonAjouterFormation"  type="submit">Ajouter Formation</button>
 
-</form>
+</form> 
+
+
+
+
+<!-- <mat-form-field appearance="fill">
+    <mat-label>Nom</mat-label>
+    <input matInput type="text" #boxTitre>
+  </mat-form-field>
+  
+  <mat-form-field id="champDescription" appearance="fill">
+    <mat-label>Description</mat-label>
+    <textarea matInput #boxDescription></textarea>
+  </mat-form-field>
+  <div class="boutonSupprimerMettreAjour">
+  <button  type="submit" mat-raised-button (click)="">Supprimer</button>
+  <button  type="submit" mat-raised-button (click)="onSubmit(boxTitre.value,boxDescription.value)" >Mettre à jour</button>
+
+</div> -->
+    

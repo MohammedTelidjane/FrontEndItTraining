@@ -8,6 +8,7 @@ import { Formation } from './models/Formation';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
   title = 'FrontEndItTraining';
   // formations:Formation[]=[];
   values:string[]=[];
@@ -22,6 +23,8 @@ export class AppComponent {
 
 
   constructor(){}
+
+
   ajouterFormation(nouvelleFormation:Formation){
 
     // this.formations.push(nouvelleFormation);

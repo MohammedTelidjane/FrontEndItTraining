@@ -1,3 +1,56 @@
+
+
+.incriptionAdmin{
+  width: 300px;
+  height: 340px;
+  margin-left: 600px;
+  margin-top: 240px;
+  border: solid;
+  border-block-color: inherit;
+  border-block-color: rgba(37, 109, 204, 0.87);
+    border-left-color: rgba(37, 109, 204, 0.87);
+    border-right-color: rgba(37, 109, 204, 0.87);
+    border-width: 5px;
+    position: fixed;
+}
+
+.example-container {
+  padding-left: 30px;
+  padding-top: 20px;
+}
+.mat-form-field + .mat-form-field {
+  margin-left: 8px;
+  /* padding: 20px; */
+  padding-left: 30px;
+  padding-top: 20px;
+  /* position: inherit; */
+  /* width: 200px;
+  height: 300px;
+  border-style: solid;
+  border: steelblue;
+  border-width: 4px; */
+}
+
+.buttonConnexion{
+  margin-left: 50px;
+  margin-bottom: 10px
+}
+
+
+.example-right-align {
+  text-align: right;
+}
+
+input.example-right-align::-webkit-outer-spin-button,
+input.example-right-align::-webkit-inner-spin-button {
+  display: none;
+}
+
+input.example-right-align {
+  -moz-appearance: textfield;
+} 
+
 .contenu-global{
     padding-bottom: 80px;
 }
+
