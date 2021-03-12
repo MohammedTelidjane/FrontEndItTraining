@@ -1,3 +1,17 @@
 p{
     margin: 0;
 }
+
+.titre{
+    margin-bottom: 7px;
+}
+
+.icons-footer{
+    font-size: 20px;
+}
+
+.element{
+    display: flex;
+    /* flex-direction: column;
+    justify-content: center; */
+}
