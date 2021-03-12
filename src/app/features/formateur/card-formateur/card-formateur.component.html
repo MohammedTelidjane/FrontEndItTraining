@@ -1,21 +1,23 @@
 <mat-card>
     <div class="cardFormateur">
         <!-- <div class="formationSelection champ">Choix 1</div> -->
-        <div class="formateurIdentite champ">
-            <div> {{formateur.nom}} </div>
-            <div> {{formateur.prenom}} </div>
+        <div class="infos-texts">
+            <div class="formateurIdentite champ">
+                <div> {{formateur.nom}} </div>
+                <div> {{formateur.prenom}} </div>
+            </div>
+            <!-- <div class="formateurEntreprise champ"> {{formateur.entreprise}} </div> -->
+            <div class="formateurDatenaissance champ"> {{formateur.dateNaissance}} </div>
+            <!-- <div class="formateurNote champ"> 4,5/5 </div>
+            <div class="formateurDateDemande champ"> 08/02/2021 </div>
+            <div class="formateurDateReponse champ"> 20/02/2021 </div>
+            <div class="formateurNatureReponse champ"> Refus </div> -->
+            <div class="formateurContact champ">
+                <div class="formateurTelephone"> {{formateur.telephone}} </div>
+                <div class="formateurEmail"> {{formateur.email}} </div>
+            </div>
         </div>
-        <div class="formateurEntreprise champ"> {{formateur.entreprise}} </div>
-        <div class="formateurDatenaissance champ"> {{formateur.dateNaissance}} </div>
-        <!-- <div class="formateurNote champ"> 4,5/5 </div>
-        <div class="formateurDateDemande champ"> 08/02/2021 </div>
-        <div class="formateurDateReponse champ"> 20/02/2021 </div>
-        <div class="formateurNatureReponse champ"> Refus </div> -->
-        <div class="formateurContact champ">
-            <div class="formateurTelephone"> {{formateur.telephone}} </div>
-            <div class="formateurEmail"> {{formateur.email}} </div>
-        </div>
-        
+        <div class="boutons">
             <!-- <button (click)="MettreAJourFormateur()"> Mettre à jour </button> -->
             <button class="bouton-material-update" mat-fab color="primary" aria-label="Example icon button with a delete icon">
                 <mat-icon>autorenew</mat-icon >
@@ -24,6 +26,6 @@
             <button class="bouton-material-supprimer" mat-fab color="primary" aria-label="Example icon button with a delete icon" (click)="supprimerFormateur()">
                 <mat-icon>delete</mat-icon >
             </button>
-        
+        </div>
     </div>
 </mat-card>    
