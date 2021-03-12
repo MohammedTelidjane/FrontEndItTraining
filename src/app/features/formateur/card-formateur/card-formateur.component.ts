@@ -27,8 +27,8 @@ export class CardFormateurComponent implements OnInit {
   }
 
   MettreAJourFormateur(){
-    this.update.emit("")
-    this.router.navigate(['/FormulaireModificationFormateur'])
-
+    this.update.emit(this.formateur)
+    // this.router.navigate(['/FormulaireModificationFormateur'])
+    console.log(this.formateur)
   }
 }

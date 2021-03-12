@@ -1,14 +1,22 @@
+/* div{
+    margin: 2px;
+} */
+
 .cardFormateur{
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
+    margin-left: 2px;
+    margin-top: 2px;
 }
 
  .champ{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin: 10px;
+    align-items: left;
+    /* margin: 10px; */
+    width: 33%;
 }
 
 .formateurIdentite + .formateurContact{
@@ -17,9 +25,7 @@
     align-items: center;
 }
 
-div{
-    width: fit-content;
-}
+
 
 .bouton-material-supprimer{
     display: flex;
@@ -37,4 +43,30 @@ div{
     background-color: blue;
     width: 30px;
     height: 30px;
+}
+
+.mat-focus-indicator{
+    padding: 0;
+}
+
+mat-card{
+    width: 40%;
+    height: 55px;
+    border: blue solid 1px;
+    margin-top: 2px;
+}
+
+.boutons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 20%;
+    justify-content: space-around;
+}
+
+.infos-texts{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
 }

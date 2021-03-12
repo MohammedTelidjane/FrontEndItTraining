@@ -1,4 +1,11 @@
-<button routerLink="/ListeFormateur"> Afficher la liste des formateurs </button>
+<button routerLink="/ListeFormateur" 
+        mat-button 
+        color="primary" 
+        aria-label="Example icon button with a delete icon"
+        class="bouton-material-afficher-liste-formateurs"> 
+    <mat-icon>list</mat-icon>
+    Afficher la liste des formateurs
+</button>
 <form [formGroup]="formateurFormulaire" (ngSubmit)="ajouter()">    
     <!-- <p>Nom: <input formControlName="nom"></p> -->
     <!-- <p>Prenom: <input formControlName="prenom"></p>
