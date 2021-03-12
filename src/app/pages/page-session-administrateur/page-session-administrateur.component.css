@@ -1,0 +1,14 @@
+main {
+    margin-top: 180px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tableau {
+    margin: 10px;
+}
+
+.affichage-liste-session {
+    margin: 10px;
+    margin-right: 100px;
+}

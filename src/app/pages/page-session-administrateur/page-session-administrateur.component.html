@@ -1,0 +1,44 @@
+
+<main>
+    <header>
+    <div class="ajout-session">
+        <a routerLink="/formulaireSession">Ajouter une nouvelle session</a>
+    </div>
+    </header>
+    <div class="tableau">
+        <app-page-tableau-de-bord></app-page-tableau-de-bord>
+    </div>
+    <div class="affichage-liste-session">
+    <div *ngFor="let session of listSession">
+        <p>Session : {{session.id}}</p>
+        <p>Date de début : {{session.dateDebut}}</p>
+        <p>Date de fin : {{session.dateFin}}</p>
+        <p>Prix hors taxe : {{session.prixHt}}</p>
+        <p>Liste des participants : {{session.participants}}</p> 
+    
+
+    <div class="page-admin">
+        <mat-form-field appearance="fill">
+            <mat-label>Date de début : </mat-label>
+            <input matInput type="text" #valDateDebut>
+        </mat-form-field>
+        <mat-form-field id="champDescription" appearance="fill">
+            <mat-label>Date de fin :</mat-label>
+            <input matInput type="text" #valDateFin>
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+            <mat-label>Prix hors taxes : </mat-label>
+            <input matInput type="number" #valPrix>
+        </mat-form-field>
+        <div class="supprimer-mettre-a-jour">
+            <button type="submit" mat-raised-button (click)="onDelete(session.id)">Supprimer la session</button> 
+            <button type="submit" mat-raised-button (click)="onUpdate(session, valDateDebut.value, valDateFin.value, valPrix.value)">Mettre à jour la session</button>
+        </div>
+    </div>
+</div>
+</div>
+</main>
+
+
+
+
