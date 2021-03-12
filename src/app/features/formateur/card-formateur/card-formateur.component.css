@@ -17,9 +17,9 @@
     align-items: center;
 }
 
-div{
+/* div{
     width: fit-content;
-}
+} */
 
 .bouton-material-supprimer{
     display: flex;
@@ -37,4 +37,12 @@ div{
     background-color: blue;
     width: 30px;
     height: 30px;
+}
+
+.mat-focus-indicator{
+    padding: 0;
+}
+
+mat-card{
+    width: 40%;
 }
