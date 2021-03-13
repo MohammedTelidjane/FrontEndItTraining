@@ -1,14 +1,28 @@
 main {
-    margin-top: 180px;
+    background-color: gray;
+    color: white;
+}
+
+.ajout-session {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+article {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .tableau {
-    margin: 10px;
+    margin-top: -150px;
+    margin-right: 500px;
 }
 
 .affichage-liste-session {
-    margin: 10px;
     margin-right: 100px;
+    margin-bottom: 30px;
+}
+
+.formumaire {
+    margin-bottom: 30px;
 }
