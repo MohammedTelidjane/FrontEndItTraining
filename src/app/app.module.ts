@@ -73,6 +73,7 @@ import { AccueilComponent } from './pages/accueil/accueil.component';
 import { NgMatSearchBarModule } from 'ng-mat-search-bar';
 import { QuiSommesNousComponent } from './pages/qui-sommes-nous/qui-sommes-nous.component';
 import { PageSessionAdministrateurComponent } from './pages/page-session-administrateur/page-session-administrateur.component';
+import { PageParticipantAdministrateurComponent } from './pages/page-participant-administrateur/page-participant-administrateur.component';
 
 
 
@@ -121,7 +122,8 @@ import { PageSessionAdministrateurComponent } from './pages/page-session-adminis
     PageFormulaireParticipantComponent,
     AccueilComponent,
     QuiSommesNousComponent,
-    PageSessionAdministrateurComponent
+    PageSessionAdministrateurComponent,
+    PageParticipantAdministrateurComponent
   ],
 
   imports: [

@@ -13,22 +13,27 @@
             Date de naissance :
             <input type="text" formControlName="dateNaissance" />
         </label> -->
-
-        <mat-form-field>
+    <p>
+        <mat-form-field appearance="legacy">
             <mat-label>Nom</mat-label>
             <input matInput placeholder="Ex. Dujardin" formControlName="nom">
         </mat-form-field>
+    </p>
+    <p>
         <mat-form-field>
             <mat-label>Prénom</mat-label>
             <input matInput placeholder="Ex. Jean" formControlName="prenom">
         </mat-form-field>
+    </p>
+    <p>
         <mat-form-field>
             <mat-label>Date de naissance</mat-label>
             <input matInput placeholder="Ex. 25/12/2000" formControlName="dateNaissance">
         </mat-form-field>
+    </p>
     </div>
     <!-- <button type="submit">Valider</button> -->
-    <button type="submit" class="bouton-material-valider-new-formateur" mat-button color="primary" aria-label="Example icon button with a delete icon" (onClick)="onSubmit()">
+    <button type="submit" class="bouton-material-valider-new-formateur" mat-button color="primary" aria-label="Example icon button with a delete icon">
         <mat-icon>done</mat-icon >
             Valider
     </button>

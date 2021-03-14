@@ -1,16 +1,4 @@
-.page {
-    background-color: grey;
-}
-
-.menuTableauDeBord {
-}
-
-.fin-de-page {
-    height: 1000px;
-    background-color: grey;
-}
-
-/* .menuTableauDeBord{
+.menuTableauDeBord{
     width: 250px;
     background: #faf0db;
     border: solid;
@@ -18,8 +6,6 @@
     border-left-color: rgb(255, 255, 0); 
     border-right-color: rgb(255, 255, 0);
     position: fixed;
-    margin-top: 110px;
+    margin-top: 200px;
     margin-left: 200px;  
-    
-    margin-bottom: 100px;
-} */
+}

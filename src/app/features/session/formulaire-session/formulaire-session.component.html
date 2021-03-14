@@ -1,4 +1,4 @@
-<form [formGroup]="sessionForm" (ngSubmit)="onSubmit()">
+<!-- <form [formGroup]="sessionForm" (ngSubmit)="onSubmit()">
     <h1>Ajouter une session</h1> 
     <label>
         Prix hors taxe :
@@ -13,4 +13,35 @@
         <input type="text" formControlName="dateFin" />
     </label>
     <button type="submit">Envoyer la session</button>
+</form> -->
+
+
+<form [formGroup]="sessionForm" (ngSubmit)="onSubmit()">
+<p>
+    <mat-form-field appearance="legacy">
+      <mat-label>Prix hors taxes</mat-label>
+      <input matInput placeholder="Placeholder" type="number" formControlName="prixHt">
+    </mat-form-field>
+  </p>
+  <p>
+    <mat-form-field appearance="standard">
+      <mat-label>Date de début</mat-label>
+      <input matInput placeholder="Placeholder" formControlName="dateDebut">
+   
+    </mat-form-field>
+  </p>
+  <p>
+    <mat-form-field appearance="standard">
+      <mat-label>Date de fin</mat-label>
+      <input matInput placeholder="Placeholder" formControlName="dateFin">
+     
+    </mat-form-field>
+  </p>
+
+  <section>
+    <div class="button">
+      <button mat-raised-button color="primary" type="submit">Créer la session</button>
+    </div>
+  </section>
 </form>
+

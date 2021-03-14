@@ -1,14 +1,15 @@
 
 <main>
-    <div class="ajout-session">
-        <a routerLink="/formulaireSession">
-        <button mat-raised-button>Ajouter une nouvelle session</button> </a>
-    </div>
+    
     <article>
     <div class="tableau">
         <app-page-tableau-de-bord></app-page-tableau-de-bord>
     </div>
     <div class="affichage-liste-session">
+        <div class="ajout-session">
+            <a routerLink="/formulaireSession">
+            <button mat-raised-button>Ajouter une nouvelle session</button> </a>
+        </div>
     <div *ngFor="let session of listSession">
         <p>Session : {{session.id}}</p>
         <p>Date de début : {{session.dateDebut}}</p>

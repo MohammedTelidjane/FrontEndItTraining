@@ -19,6 +19,8 @@ import { PageTableauDeBordComponent } from './pages/page-tableau-de-bord/page-ta
 import { QuiSommesNousComponent } from './pages/qui-sommes-nous/qui-sommes-nous.component';
 import { FormulaireSessionComponent } from './features/session/formulaire-session/formulaire-session.component';
 import { PageSessionAdministrateurComponent } from './pages/page-session-administrateur/page-session-administrateur.component';
+import { FormulaireParticipantComponent } from './features/participant/formulaire-participant/formulaire-participant.component';
+import { PageParticipantAdministrateurComponent } from './pages/page-participant-administrateur/page-participant-administrateur.component';
 
 
 const routes: Routes = [
@@ -30,10 +32,12 @@ const routes: Routes = [
   // {path:'cardFormations',component:CardFormationComponent}
   {path:'pageFormationsAdministrateur',component:PageFormationAdministrateurComponent},
   {path:'PageSessionAdministrateur',component:PageSessionAdministrateurComponent},
+  {path:'PageParticipantAdministrateur', component:PageParticipantAdministrateurComponent},
   {path:'pageformationutilisateur',component:PageFormationUtilisateurComponent},
   {path:'detailFormation' , component: DetailFormationComponent},
   {path:'pageAdministrateurLogin' , component: PageAdministrateurLoginComponent},
   {path:'pageTableauDeBord' , component: PageTableauDeBordComponent},
+  {path:'formulaireParticipant', component: FormulaireParticipantComponent},
   {path:'listeParticipants' , component: ListParticipantComponent},
   {path: 'formulaireSession', component: FormulaireSessionComponent},
   {path:'listeSessions' , component: ListSessionComponent},

@@ -1,6 +1,6 @@
 
 
-.ajout-session {
+.ajout-participant {
     text-align: center;
     margin-bottom: 50px;
 }
@@ -11,7 +11,7 @@ article {
     justify-content: space-between;
 } 
 
-.affichage-liste-session {
+.affichage-liste-participant {
     margin-top: 200px;
     margin-right: 300px;
     margin-bottom: 100px;
