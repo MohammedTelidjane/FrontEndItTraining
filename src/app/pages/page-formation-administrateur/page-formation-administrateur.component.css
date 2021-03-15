@@ -10,42 +10,10 @@ article {
 
 .affichage-liste-formation {
     margin-top: 200px;
-    margin-right: 300px;
+    margin-right: 500px;
     margin-bottom: 100px;
 }
 
 .formumaire {
     margin-bottom: 30px;
 }
-
-/* .pageAdmin {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-left: 200px;
-  } */
-
-  /* #champDescription{
-      width:600px;
-  } */
-/* .boutonSupprimerMettreAjour{
-width:400px ;
-display:flex;
-justify-content: space-around;
-margin-left: 100px;
-}
-
-.groupementTableauBordPageFormationAdmin{
-    display: flex;
-    margin-top: -180px;
-    
-}
-
-.affichageListeFormations{
-    
-    margin-left: 280px;
-    margin-top: 200px;
-    margin-left: 280px;
-    margin-bottom: 200px;
-   
-} */
