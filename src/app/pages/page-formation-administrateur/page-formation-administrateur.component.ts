@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Formation } from 'src/app/models/Formation';
 import { FormationService } from 'src/app/services/formation.service';
+import {MatDialog} from '@angular/material/dialog';
+
 
 @Component({
   selector: 'app-page-formation-administrateur',
@@ -16,7 +18,17 @@ export class PageFormationAdministrateurComponent implements OnInit {
   '<span style="text-decoration: underline">underline text</span>';
 
  
-  constructor(private formationService: FormationService) { }
+  constructor(private formationService: FormationService, public dialog:MatDialog) { }
+
+
+//    openDialog() {
+//      const dialogRef = this.dialog.open(PageFormationAdministrateurComponent);
+
+// //     dialogRef.afterClosed().subscribe(result => {
+// //       console.log(`Dialog result: ${result}`);
+// //     });
+// //   }
+//  }
 
 
   recupererToutesFormations() :void {
@@ -52,6 +64,8 @@ formation.description=valDescription;
  //console.log("apresdappler save");
 
 }
+
+
   ngOnInit(): void {
     this.formationService.findAll().subscribe(res=>this.formations=res);
   }
