@@ -1,1 +1,13 @@
-<p>formulaire-theme works!</p>
+<form [formGroup]="themeForm" (ngSubmit)="onSubmit()">
+    <p>
+        <mat-form-field appearance="legacy">
+          <mat-label>Nom du thème :</mat-label>
+          <input matInput placeholder="Placeholder" type="text" formControlName="nom">
+        </mat-form-field>
+      </p>    
+      <section>
+        <div class="button">
+          <button mat-raised-button color="primary" type="submit">Créer le thème</button>
+        </div>
+      </section>
+    </form>

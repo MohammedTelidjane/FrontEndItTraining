@@ -1,1 +1,9 @@
-<p>liste-theme works!</p>
+<h1>Liste des thèmes :</h1>
+<div class="list-theme">
+    <app-card-theme *ngFor="let theme of listTheme" 
+    [theme]="theme"
+    (delete)="onDelete(theme)">
+
+    </app-card-theme>
+
+</div>
