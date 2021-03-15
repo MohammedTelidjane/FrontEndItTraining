@@ -1,0 +1,40 @@
+<form [formGroup]="formateurFormulaire" (ngSubmit)="update()">    
+    <!-- <p>Nom: <input formControlName="nom"></p> -->
+    <!-- <p>Prenom: <input formControlName="prenom"></p>
+    <p>Date de naissance: <input formControlName="dateNaissance"></p> -->
+    <!-- <p>Entreprise: <input formControlName="entreprise"></p> -->
+    <!-- <p>Telephone: <input formControlName="telephone"></p>
+    <p>Email: <input formControlName="email"></p> -->
+
+
+    <div class="conteneur-formulaire-formateur">
+        <mat-form-field>
+            <mat-label>Nom</mat-label>
+            <input matInput formControlName="nom">
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Prenom</mat-label>
+            <input matInput formControlName="prenom">
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Date de naissance</mat-label>
+            <input matInput formControlName="dateNaissance">
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Telephone</mat-label>
+            <input matInput formControlName="telephone">
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Email</mat-label>
+            <input matInput formControlName="email">
+        </mat-form-field>
+    </div>
+    
+    
+    <!-- <button type="submit"> {{messageButton}} </button> -->
+    <button type="submit" class="bouton-material-valider-new-formateur" mat-button color="primary" aria-label="Example icon button with a delete icon">
+        <mat-icon>done</mat-icon >
+            {{messageButton}}
+    </button>
+    <p></p>
+</form>
