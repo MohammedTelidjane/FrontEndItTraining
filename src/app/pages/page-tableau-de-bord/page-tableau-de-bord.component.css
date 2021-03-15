@@ -1,11 +1,29 @@
 .menuTableauDeBord{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     width: 250px;
-    background: #faf0db;
-    border: solid;
-    border-block-color: rgb(255, 255, 0);
-    border-left-color: rgb(255, 255, 0); 
-    border-right-color: rgb(255, 255, 0);
+    height: 500px;
+    background: #8383a8;
     position: fixed;
     margin-top: 200px;
-    margin-left: 10px;  
+    
+}
+
+.menuTableauDeBord div {
+    margin-left: 15px;
+    text-align: justify;
+    width: 250px;
+    height: 45px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.menuTableauDeBord div:hover {
+    margin-left: 0px;
+    background-color: rgb(62, 62, 147, 0.5);
 }
