@@ -1,18 +1,6 @@
 <form [formGroup]="participantForm" (ngSubmit)="onSubmit()">
     <h1>Créer un participant</h1> 
     <div class="conteneur-formulaire-formateur">
-        <!-- <label>
-            Nom :
-            <input type="text" formControlName="nom" />
-        </label>
-        <label>
-            Prénom : 
-            <input type="text" formControlName="prenom" />
-        </label>
-        <label>
-            Date de naissance :
-            <input type="text" formControlName="dateNaissance" />
-        </label> -->
     <p>
         <mat-form-field appearance="legacy">
             <mat-label>Nom</mat-label>
@@ -32,7 +20,6 @@
         </mat-form-field>
     </p>
     </div>
-    <!-- <button type="submit">Valider</button> -->
     <button type="submit" class="bouton-material-valider-new-formateur" mat-button color="primary" aria-label="Example icon button with a delete icon">
         <mat-icon>done</mat-icon >
             Valider
