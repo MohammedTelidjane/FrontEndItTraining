@@ -1,13 +1,11 @@
 .menuTableauDeBord{
-    width: 200px;
+    width: 250px;
     background: #faf0db;
     border: solid;
     border-block-color: rgb(255, 255, 0);
     border-left-color: rgb(255, 255, 0); 
-    border-right-color: rgb(255, 255, 0);  ;
-    margin-top: 200px;
+    border-right-color: rgb(255, 255, 0);
     position: fixed;
     margin-top: 200px;
-    
-    /* margin-bottom: 100px; */
+    margin-left: 10px;  
 }

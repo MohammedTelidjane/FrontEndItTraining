@@ -19,7 +19,7 @@ export class SessionService {
       return this.httpClient.get<Session>(`http://localhost:8001/sessions/${id}`)
       }
   
-  create(session:Session): Observable<Session> {
+  create(session:Session) {
        return this.httpClient.post<Session>(`http://localhost:8001/sessions`,session);
        }
   

@@ -23,14 +23,6 @@ export class ListSessionComponent implements OnInit {
     })
   }
 
-  onUpdate(session: Session, valDateDebut: string, valDateFin: string, valPrix): void {
-    console.log(session);
-    session.dateDebut = valDateDebut;
-    session.dateFin = valDateFin;
-    session.prixHt = valPrix;
-    this.sessionService.create(session).subscribe(console.log);
-  }
-
   onDelete(session: Session) {
     this.sessionService.delete(session.id).subscribe();
     this.listSession = this.listSession.filter(uneSession => uneSession.id !== session.id);

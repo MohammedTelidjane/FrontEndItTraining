@@ -1,0 +1,23 @@
+
+
+.ajout-session {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+article {
+    display: flex;
+    justify-content: space-between;
+} 
+
+.affichage-liste-session {
+    margin-top: 200px;
+    margin-right: 300px;
+    margin-bottom: 100px;
+}
+
+
+.formumaire {
+    margin-bottom: 30px;
+}

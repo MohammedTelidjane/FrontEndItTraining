@@ -72,6 +72,8 @@ import { AccueilComponent } from './pages/accueil/accueil.component';
 // import { MatSliderModule } from '@angular/material/slider';
 import { NgMatSearchBarModule } from 'ng-mat-search-bar';
 import { QuiSommesNousComponent } from './pages/qui-sommes-nous/qui-sommes-nous.component';
+import { PageSessionAdministrateurComponent } from './pages/page-session-administrateur/page-session-administrateur.component';
+import { PageParticipantAdministrateurComponent } from './pages/page-participant-administrateur/page-participant-administrateur.component';
 
 
 
@@ -119,7 +121,9 @@ import { QuiSommesNousComponent } from './pages/qui-sommes-nous/qui-sommes-nous.
     PageFormulaireFormationComponent,
     PageFormulaireParticipantComponent,
     AccueilComponent,
-    QuiSommesNousComponent
+    QuiSommesNousComponent,
+    PageSessionAdministrateurComponent,
+    PageParticipantAdministrateurComponent
   ],
 
   imports: [

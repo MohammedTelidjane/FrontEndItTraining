@@ -7,19 +7,22 @@
     <button (click)="onDelete()">Supprimer la session</button>    
 </div>
 
-<form [formGroup]="sessionForm">
-    <h1>Mettre à jour la session</h1> 
-    <label>
-        Prix hors taxe :
-        <input type="number" formControlName="prixHt" />
-    </label>
-    <label>
-        Date de début : 
-        <input type="text" formControlName="dateDebut" />
-    </label>
-    <label>
-        Date de fin :
-        <input type="text" formControlName="dateFin" />
-    </label>
-    <button (click)="onUpdate()">Mettre à jour la session</button>
-</form>
+<div class="pageAdmin">
+    <mat-form-field appearance="fill">
+        <mat-label>Date de début : </mat-label>
+        <input matInput type="text" #valDateDebut>
+    </mat-form-field>
+    <mat-form-field id="champDescription" appearance="fill">
+        <mat-label>Date de fin :</mat-label>
+        <input matInput type="text" #valDateFin>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+        <mat-label>Prix hors taxes : </mat-label>
+        <input matInput type="number" #valPrix>
+    </mat-form-field>
+      <div class="mettre-a-jour">
+        <button type="submit" (click)="onUpdate()">Mettre à jour la session</button>
+    </div>
+</div>
+
+

@@ -1,3 +1,24 @@
 .divDetailFormation{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    margin-top: 200px;
+    margin-left: 30px;
+    margin-right: 30px;
     padding-bottom: 70px;
+    text-align: justify;
+}
+
+h3 {
+    color: #6fa3df;
+    font-weight: bold;
+}
+
+p {
+    color: gray;
+}
+
+div {
+    padding-bottom: 30px;
 }

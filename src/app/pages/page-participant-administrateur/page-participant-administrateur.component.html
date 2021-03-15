@@ -1,0 +1,42 @@
+
+<main>
+    
+    <article>
+    <div class="tableau">
+        <app-page-tableau-de-bord></app-page-tableau-de-bord>
+    </div>
+    <div class="affichage-liste-participant">
+        <div class="ajout-participant">
+            <a routerLink="/formulaireParticipant">
+            <button mat-raised-button>Ajouter une nouveau particpant</button> </a>
+        </div>
+    <div *ngFor="let participant of listParticipant">
+        <p>Participant : {{participant.id}}</p>
+        <p>Nom : {{participant.nom}}</p>
+        <p>Prénom : {{participant.prenom}}</p>
+        <p>Date de naissance : {{participant.dateNaissance}}</p>
+        
+    
+
+    <div class="formumaire">
+        <mat-form-field appearance="fill">
+            <mat-label>Nom : </mat-label>
+            <input matInput type="text" #valNom>
+        </mat-form-field>
+        <mat-form-field id="champDescription" appearance="fill">
+            <mat-label>Prénom :</mat-label>
+            <input matInput type="text" #valPrenom>
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+            <mat-label>Date de naissance : </mat-label>
+            <input matInput #valDateNaissance>
+        </mat-form-field>
+        <div class="supprimer-mettre-a-jour">
+            <button type="submit" mat-raised-button (click)="onDelete(participant.id)">Supprimer le particpant</button> 
+            <button type="submit" mat-raised-button (click)="onUpdate(participant, valNom.value, valPrenom.value, valDateNaissance.value)">Mettre à jour le participant</button>
+        </div>
+    </div>
+</div>
+</div>
+</article>
+</main>
