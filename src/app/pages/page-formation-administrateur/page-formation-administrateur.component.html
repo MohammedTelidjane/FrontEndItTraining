@@ -1,43 +1,32 @@
-<!-- <p>page-formation-administrateur works!</p> -->
-<!-- <app-formulaire-formation></app-formulaire-formation>  -->
-
-<!-- <div>
-    <button  class="boutonRecupererToutesLFormations" type="submit" (click)="recupererToutesFormations()" >Récuperer Toutes les Formations</button> 
-
-</div>  -->
-<div class="ajout-formation">
-  <a routerLink="/pageFormulaireFormation">Ajouter une nouvelle Formation</a>
-</div>
-  <div class="groupementTableauBordPageFormationAdmin">
-
 <main>
-<app-page-tableau-de-bord></app-page-tableau-de-bord>
-
-
-<div class="affichageListeFormations">
-<div  *ngFor="let formation of formations">
-    <p>Id : <span class="nom">{{formation.id}}</span></p>
-    <p>Nom : <span class="nom">{{formation.titre}}</span></p>
-    <p>Description : <span class="nom">{{formation.description}}</span></p>
-
- <div class="pageAdmin">
-    <mat-form-field appearance="fill">
-        <mat-label>Nom</mat-label>
-        <input matInput type="text" #boxTitre>
-      </mat-form-field>
-      
-      <mat-form-field id="champDescription" appearance="fill">
-        <mat-label>Description</mat-label>
-        <textarea matInput #boxDescription></textarea>
-      </mat-form-field>
-      <div class="boutonSupprimerMettreAjour">
-      <button  type="submit" mat-raised-button (click)="SupprimerParId(formation.id)">Supprimer</button>
-      <button  type="submit" mat-raised-button (click)="MettreAJourUneFormation(formation,boxTitre.value,boxDescription.value)" >Mettre à jour</button>
-   
+  <article>
+  <div class="tableau">
+    <app-page-tableau-de-bord></app-page-tableau-de-bord>
+  </div>
+  <div class="affichage-liste-formation">
+    <div class="ajout-formation">
+      <a routerLink="/pageFormulaireFormation"><button mat-raised-button>Ajouter une nouvelle formation</button></a>
     </div>
-</div>
-</div> 
+    <div  *ngFor="let formation of formations">
+      <p>Id : <span class="nom">{{formation.id}}</span></p>
+      <p>Nom : <span class="nom">{{formation.titre}}</span></p>
+      <p>Description : <span class="nom">{{formation.description}}</span></p>
 
-</div>
-
+      <div class="formumaire">
+        <mat-form-field appearance="fill">
+          <mat-label>Nom :</mat-label>
+          <input matInput type="text" #boxTitre>
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+          <mat-label>Description :</mat-label>
+          <textarea matInput #boxDescription></textarea>
+        </mat-form-field>
+        <div class="supprimer-mettre-a-jour">
+          <button  type="submit" mat-raised-button (click)="SupprimerParId(formation.id)">Supprimer</button>
+          <button  type="submit" mat-raised-button (click)="MettreAJourUneFormation(formation,boxTitre.value,boxDescription.value)" >Mettre à jour</button>
+        </div>
+      </div>
+    </div> 
+  </div>
+</article>
 </main>
