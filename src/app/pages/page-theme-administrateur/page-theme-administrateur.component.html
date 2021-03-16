@@ -1,0 +1,36 @@
+
+<main>
+    
+    <article>
+    <div class="tableau">
+        <app-page-tableau-de-bord></app-page-tableau-de-bord>
+    </div>
+    <div class="affichage-liste-theme">
+        <div class="ajout-theme">
+            <a routerLink="/formulaireTheme">
+            <button mat-raised-button>Ajouter une nouveau thème</button> </a>
+        </div>
+    <div *ngFor="let theme of listTheme">
+        <p>Thème : {{theme.id}}</p>
+        <p>Nom : {{theme.nom}}</p>
+    
+    
+    <div class="formumaire">
+        <mat-form-field appearance="fill">
+            <mat-label>Nom : </mat-label>
+            <input matInput type="text" #valNom>
+        </mat-form-field>
+        <div class="supprimer-mettre-a-jour">
+            <button type="submit" mat-raised-button (click)="onDelete(theme.id)">Supprimer le thème</button> 
+            <button type="submit" mat-raised-button (click)="onUpdate(theme, valNom.value)">Mettre à jour le thème</button>
+        </div>
+    </div>
+    </div>
+    </div>
+    </article>
+    </main>
+    
+    
+    
+    
+    

@@ -22,8 +22,12 @@ export class PageFormationAdministrateurComponent implements OnInit {
         const dialogConfig = new MatDialogConfig();
         dialogConfig.disableClose = true;
         dialogConfig.autoFocus = true;
-        dialogConfig.width = "17%";
-        dialogConfig.height = "65%";
+        dialogConfig.width = "20%";
+        dialogConfig.height = "68%";
+        dialogConfig.position = {
+            // 'top': '0',
+            'right': '200px'
+        };
         
         this.isUpdateOpen = true;
         let dialogRef = this.dialog.open(FormulaireMiseAjourComponent,dialogConfig);

@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { FormBuilder, FormGroup } from '@angular/forms';
+import { Theme } from 'src/app/models/Theme';
 
 @Component({
   selector: 'app-card-theme',
@@ -7,9 +9,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CardThemeComponent implements OnInit {
 
-  constructor() { }
+  @Input() theme: Theme;
+  @Output() delete = new EventEmitter();
+  @Output() update = new EventEmitter();
+
+  themeForm: FormGroup;
+
+  constructor(private themeBuilder: FormBuilder) {
+    this.themeForm = this.themeBuilder.group({
+      nom: ['']
+    });
+   }
 
   ngOnInit(): void {
+  }
+
+  onUpdate() {
+    this.update.emit();
+  }
+
+  onDelete() {
+    this.delete.emit();
   }
 
 }

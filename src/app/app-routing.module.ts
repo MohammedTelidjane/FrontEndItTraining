@@ -21,6 +21,8 @@ import { FormulaireSessionComponent } from './features/session/formulaire-sessio
 import { PageSessionAdministrateurComponent } from './pages/page-session-administrateur/page-session-administrateur.component';
 import { FormulaireParticipantComponent } from './features/participant/formulaire-participant/formulaire-participant.component';
 import { PageParticipantAdministrateurComponent } from './pages/page-participant-administrateur/page-participant-administrateur.component';
+import { PageThemeAdministrateurComponent } from './pages/page-theme-administrateur/page-theme-administrateur.component';
+import { FormulaireThemeComponent } from './features/theme/formulaire-theme/formulaire-theme.component';
 
 
 const routes: Routes = [
@@ -44,6 +46,8 @@ const routes: Routes = [
   {path:'pageFormulaireFormation' , component: PageFormulaireFormationComponent},
   {path:'FormationUtilisateur' , component: PageFormationUtilisateurComponent},
   {path:'pageFormulaireParticipant' , component: PageFormulaireParticipantComponent},
+  {path:'pageFormulaireTheme', component: PageThemeAdministrateurComponent},
+  {path:'formulaireTheme', component: FormulaireThemeComponent},
   
   {path: '**', component: AccueilComponent}
   

@@ -76,6 +76,7 @@ import { PageSessionAdministrateurComponent } from './pages/page-session-adminis
 import { PageParticipantAdministrateurComponent } from './pages/page-participant-administrateur/page-participant-administrateur.component';
 import { FormulaireMiseAjourComponent } from './pages/formulaire-mise-ajour/formulaire-mise-ajour.component';
 import { MatDialog, MatDialogModule,MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { PageThemeAdministrateurComponent } from './pages/page-theme-administrateur/page-theme-administrateur.component';
 
 
 
@@ -126,7 +127,8 @@ import { MatDialog, MatDialogModule,MAT_DIALOG_DATA } from '@angular/material/di
     QuiSommesNousComponent,
     PageSessionAdministrateurComponent,
     PageParticipantAdministrateurComponent,
-    FormulaireMiseAjourComponent
+    FormulaireMiseAjourComponent,
+    PageThemeAdministrateurComponent
   ],
 
   imports: [

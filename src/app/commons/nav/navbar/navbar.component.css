@@ -7,7 +7,7 @@
 .menu-bar{
     background-color: rgb(94, 94, 156);
     text-align: center;
-    height: 100px;
+    height: 80px;
 }
 
 .menu-bar ul{
@@ -19,7 +19,6 @@
 
 .menu-bar ul li {
     width: 200px;
-    height: 80px;
     margin: 15px;
     padding: 15px;
     
@@ -73,6 +72,14 @@
 .menu-bar ul li:hover .sub-menu1 ul li a:hover{
     /* pour changer la couleur des thèmes */
     color: #0deaf1;  
+}
+
+img {
+    margin: auto;
+} 
+
+.home:hover {
+    text-decoration: none;
 }
 
 

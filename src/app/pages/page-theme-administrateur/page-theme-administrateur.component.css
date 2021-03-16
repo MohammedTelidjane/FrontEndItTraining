@@ -1,14 +1,15 @@
-.ajout-session {
+.ajout-theme {
     text-align: center;
     margin-bottom: 50px;
 }
 
 article {
+    margin-right: 200px;
     display: flex;
     justify-content: space-between;
 } 
 
-.affichage-liste-session {
+.affichage-liste-theme {
     margin-top: 200px;
     margin-right: 300px;
     margin-bottom: 100px;

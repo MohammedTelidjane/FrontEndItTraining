@@ -1,1 +1,18 @@
-<p>card-theme works!</p>
+<div class="card-theme">
+    <p>Session : {{theme?.id}}</p>
+    <p>Prix hors taxe : {{theme.nom}}</p>
+    <button (click)="onDelete()">Supprimer le thème</button>    
+</div>
+
+<div class="pageAdmin">
+    <mat-form-field appearance="fill">
+        <mat-label>Nom du thème : </mat-label>
+        <input matInput type="text" #valDateDebut>
+    </mat-form-field>
+      <div class="mettre-a-jour">
+        <button type="submit" (click)="onUpdate()">Mettre à jour le thème</button>
+    </div>
+</div>
+
+
+
