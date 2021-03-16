@@ -50,5 +50,4 @@ Mohammed
 Linda
 Emannuel
 
-# Remarque
-Par manque de temps, les auteurs de ce projet ne sont pas arrivés à finir toute les fonctionalités du site.
+
