@@ -23,6 +23,7 @@ import { FormulaireParticipantComponent } from './features/participant/formulair
 import { PageParticipantAdministrateurComponent } from './pages/page-participant-administrateur/page-participant-administrateur.component';
 import { PageThemeAdministrateurComponent } from './pages/page-theme-administrateur/page-theme-administrateur.component';
 import { FormulaireThemeComponent } from './features/theme/formulaire-theme/formulaire-theme.component';
+import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 
 
 const routes: Routes = [
@@ -49,7 +50,7 @@ const routes: Routes = [
   {path:'pageFormulaireTheme', component: PageThemeAdministrateurComponent},
   {path:'formulaireTheme', component: FormulaireThemeComponent},
   
-  {path: '**', component: AccueilComponent}
+  {path: '**', component: PageNotFoundComponent}
   
 ];
 

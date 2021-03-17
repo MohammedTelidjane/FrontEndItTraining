@@ -5,7 +5,7 @@
   <h3> Se connecter à IT Trainning Admin</h3>
   <mat-form-field appearance="fill">
     <mat-label >Entrer Votre Identifiant</mat-label>
-    <input  matInput [type]="hide ? 'password' : 'text'" #boxDescription>
+    <input  matInput #boxDescription>
     <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
     </button>
   </mat-form-field>

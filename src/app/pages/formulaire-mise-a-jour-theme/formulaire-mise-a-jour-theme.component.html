@@ -1,0 +1,16 @@
+<form #updateForm="ngForm" class="formulairesession" [formGroup]="themeForm" (ngSubmit)="valider()" >
+    <div class="pageAdmin" >
+        <mat-form-field #bob appearance="fill" >
+            <mat-label>Id</mat-label>
+            <input matInput  type="number"  formControlName="id">
+        </mat-form-field>
+        <br>
+        <mat-form-field #bob appearance="fill" >
+            <mat-label>Nom</mat-label>
+            <input matInput  type="text" formControlName="nom" #champNom>
+        </mat-form-field>
+        <br>
+        <button mat-button mat-dialog-close type="submit">Valider</button>
+        <button mat-button mat-dialog-close>Cancel</button>
+    </div>
+</form>

@@ -15,11 +15,12 @@
         <p>Nom : {{participant.nom}}</p>
         <p>Prénom : {{participant.prenom}}</p>
         <p>Date de naissance : {{participant.dateNaissance}}</p>
-        
+        <p>Téléphone : {{participant.telephone}}</p>
+        <p>Email : {{participant.email}}</p>        
     
 
     <div class="formumaire">
-        <mat-form-field appearance="fill">
+        <!-- <mat-form-field appearance="fill">
             <mat-label>Nom : </mat-label>
             <input matInput type="text" #valNom>
         </mat-form-field>
@@ -30,10 +31,11 @@
         <mat-form-field appearance="fill">
             <mat-label>Date de naissance : </mat-label>
             <input matInput #valDateNaissance>
-        </mat-form-field>
+        </mat-form-field> -->
         <div class="supprimer-mettre-a-jour">
             <button type="submit" mat-raised-button (click)="onDelete(participant.id)">Supprimer le particpant</button> 
-            <button type="submit" mat-raised-button (click)="onUpdate(participant, valNom.value, valPrenom.value, valDateNaissance.value)">Mettre à jour le participant</button>
+            <button type="submit" mat-raised-button (click)="openDialog()">Mettre à jour</button>
+            <!-- <button type="submit" mat-raised-button (click)="onUpdate(participant, valNom.value, valPrenom.value, valDateNaissance.value)">Mettre à jour le participant</button> -->
         </div>
     </div>
 </div>

@@ -77,6 +77,11 @@ import { PageParticipantAdministrateurComponent } from './pages/page-participant
 import { FormulaireMiseAjourComponent } from './pages/formulaire-mise-ajour/formulaire-mise-ajour.component';
 import { MatDialog, MatDialogModule,MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { PageThemeAdministrateurComponent } from './pages/page-theme-administrateur/page-theme-administrateur.component';
+import { FormulaireMiseAJourParticipantComponent } from './pages/formulaire-mise-a-jour-participant/formulaire-mise-a-jour-participant.component';
+import { FormulaireMiseAJourSessionComponent } from './pages/formulaire-mise-a-jour-session/formulaire-mise-a-jour-session.component';
+import { FormulaireMiseAJourThemeComponent } from './pages/formulaire-mise-a-jour-theme/formulaire-mise-a-jour-theme.component';
+import { FormulaireMiseAJourFormateurComponent } from './pages/formulaire-mise-a-jour-formateur/formulaire-mise-a-jour-formateur.component';
+import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 
 
 
@@ -128,7 +133,12 @@ import { PageThemeAdministrateurComponent } from './pages/page-theme-administrat
     PageSessionAdministrateurComponent,
     PageParticipantAdministrateurComponent,
     FormulaireMiseAjourComponent,
-    PageThemeAdministrateurComponent
+    PageThemeAdministrateurComponent,
+    FormulaireMiseAJourParticipantComponent,
+    FormulaireMiseAJourSessionComponent,
+    FormulaireMiseAJourThemeComponent,
+    FormulaireMiseAJourFormateurComponent,
+    PageNotFoundComponent
   ],
 
   imports: [

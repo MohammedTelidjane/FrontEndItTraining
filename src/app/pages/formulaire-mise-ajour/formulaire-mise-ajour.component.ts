@@ -3,6 +3,7 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 import { MATERIAL_SANITY_CHECKS_FACTORY } from '@angular/material/core/common-behaviors/common-module';
 import { Formation } from 'src/app/models/Formation';
 import {MatDialogModule, MatDialogRef,MAT_DIALOG_DATA} from '@angular/material/dialog';
+import { Participant } from 'src/app/models/participant';
 
 @Component({
   selector: 'app-formulaire-mise-ajour',
@@ -11,10 +12,10 @@ import {MatDialogModule, MatDialogRef,MAT_DIALOG_DATA} from '@angular/material/d
 })
 export class FormulaireMiseAjourComponent implements OnInit {
   formation: Formation;
-   formationForm:FormGroup;
+  formationForm:FormGroup;
  
   
-  constructor(private formBuilder:FormBuilder, 
+  constructor(private formBuilder:FormBuilder,
     public dialogRef:MatDialogRef<FormulaireMiseAjourComponent>,
    @Inject(MatDialogModule) data) { 
     // this.description1 = data.description1;
@@ -30,6 +31,7 @@ export class FormulaireMiseAjourComponent implements OnInit {
 
          this.dialogRef.close(this.formationForm.value);
   }
+
 
 onClose(){
   this.dialogRef.close();

@@ -3,4 +3,6 @@ export interface Participant {
     nom: string;
     prenom: string;
     dateNaissance: string;
+    telephone: string;
+    email: string;
 }

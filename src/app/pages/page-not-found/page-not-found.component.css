@@ -1,0 +1,34 @@
+.corps {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgb(179, 200, 218), white);
+    margin-top: 180px;
+}
+
+img {
+    margin-left: 150px;
+    margin-top: -100px;
+}
+
+.not-found {
+    color: rgb(94, 94, 156);
+    margin-left: 900px;
+    padding-top: 50px;
+    font-size: 4.5em;
+}
+
+.home {
+    margin-left: 900px;
+    padding-top: 30px;
+    font-size: 1.5em;
+}
+
+a {
+    text-decoration: none;
+    color:rgb(48, 53, 56);
+    font-weight: bold;
+}
+
+a:hover {
+    color: darkcyan;
+}

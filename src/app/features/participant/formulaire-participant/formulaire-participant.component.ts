@@ -18,7 +18,9 @@ export class FormulaireParticipantComponent implements OnInit {
     this.participantForm = this.formBuilder.group({
       nom: [''],
     prenom: [''],
-    dateNaissance: ['']
+    dateNaissance: [''],
+    telephone: [''],
+    email: ['']
     });
    }
 

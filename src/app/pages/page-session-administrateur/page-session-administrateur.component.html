@@ -14,12 +14,11 @@
         <p>Session : {{session.id}}</p>
         <p>Date de début : {{session.dateDebut}}</p>
         <p>Date de fin : {{session.dateFin}}</p>
-        <p>Prix hors taxe : {{session.prixHt}}</p>
-        <p>Liste des participants : {{session.participants}}</p> 
+        <p>Prix hors taxe : {{session.prixHt}}</p> 
     
 
     <div class="formumaire">
-        <mat-form-field appearance="fill">
+        <!-- <mat-form-field appearance="fill">
             <mat-label>Date de début : </mat-label>
             <input matInput type="text" #valDateDebut>
         </mat-form-field>
@@ -30,10 +29,11 @@
         <mat-form-field appearance="fill">
             <mat-label>Prix hors taxes : </mat-label>
             <input matInput type="number" #valPrix>
-        </mat-form-field>
+        </mat-form-field> -->
         <div class="supprimer-mettre-a-jour">
             <button type="submit" mat-raised-button (click)="onDelete(session.id)">Supprimer la session</button> 
-            <button type="submit" mat-raised-button (click)="onUpdate(session, valDateDebut.value, valDateFin.value, valPrix.value)">Mettre à jour la session</button>
+            <button type="submit" mat-raised-button (click)="openDialog()">Mettre à jour</button>
+            <!-- <button type="submit" mat-raised-button (click)="onUpdate(session, valDateDebut.value, valDateFin.value, valPrix.value)">Mettre à jour la session</button> -->
         </div>
     </div>
 </div>

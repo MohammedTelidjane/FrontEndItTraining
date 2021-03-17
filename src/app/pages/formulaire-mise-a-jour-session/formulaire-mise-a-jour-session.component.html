@@ -1,0 +1,26 @@
+<form #updateForm="ngForm" class="formulairesession" [formGroup]="sessionForm" (ngSubmit)="valider()" >
+    <div class="pageAdmin" >
+        <mat-form-field #bob appearance="fill" >
+            <mat-label>Id</mat-label>
+            <input matInput  type="number"  formControlName="id">
+        </mat-form-field>
+        <br>
+        <mat-form-field #bob appearance="fill" >
+            <mat-label>Date de début</mat-label>
+            <input matInput  type="text" formControlName="dateDebut" #champdateDebut>
+        </mat-form-field>
+        <br>
+        <mat-form-field #bob appearance="fill" >
+            <mat-label>Date de fin</mat-label>
+            <input matInput  type="text" formControlName="dateFin" #champdateDebut>
+        </mat-form-field>
+        <br>
+        <mat-form-field #bob appearance="fill" >
+            <mat-label>Prix HT</mat-label>
+            <input matInput  type="number" formControlName="prixHt" #champPrix>
+        </mat-form-field>
+        <br>
+        <button mat-button mat-dialog-close type="submit">Valider</button>
+        <button mat-button mat-dialog-close>Cancel</button>
+    </div>
+</form>

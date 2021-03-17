@@ -16,13 +16,14 @@
     
     
     <div class="formumaire">
-        <mat-form-field appearance="fill">
+        <!-- <mat-form-field appearance="fill">
             <mat-label>Nom : </mat-label>
             <input matInput type="text" #valNom>
-        </mat-form-field>
+        </mat-form-field> -->
         <div class="supprimer-mettre-a-jour">
             <button type="submit" mat-raised-button (click)="onDelete(theme.id)">Supprimer le thème</button> 
-            <button type="submit" mat-raised-button (click)="onUpdate(theme, valNom.value)">Mettre à jour le thème</button>
+            <button type="submit" mat-raised-button (click)="openDialog()">Mettre à jour</button>
+            <!-- <button type="submit" mat-raised-button (click)="onUpdate(theme, valNom.value)">Mettre à jour le thème</button> -->
         </div>
     </div>
     </div>
