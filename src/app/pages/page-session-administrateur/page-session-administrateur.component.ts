@@ -25,7 +25,7 @@ export class PageSessionAdministrateurComponent implements OnInit {
     dialogConfig.height = "68%";
     dialogConfig.position = {
         // 'top': '0',
-        'right': '600px'
+        'right': '500px'
     };
     this.isUpdateOpen = true;
     let dialogRef = this.dialog.open(FormulaireMiseAJourSessionComponent,dialogConfig);

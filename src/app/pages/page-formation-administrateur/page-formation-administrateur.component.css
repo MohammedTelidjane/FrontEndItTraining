@@ -9,8 +9,9 @@ article {
 } 
 
 .affichage-liste-formation {
+    width: 30%;
     margin-top: 200px;
-    margin-right: 500px;
+    margin-right: 700px;
     margin-bottom: 100px;
 }
 

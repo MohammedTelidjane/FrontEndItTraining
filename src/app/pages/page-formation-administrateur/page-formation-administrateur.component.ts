@@ -26,7 +26,7 @@ export class PageFormationAdministrateurComponent implements OnInit {
         dialogConfig.height = "68%";
         dialogConfig.position = {
             // 'top': '0',
-            'right': '600px'
+            'right': '400px'
         };
         
         this.isUpdateOpen = true;
